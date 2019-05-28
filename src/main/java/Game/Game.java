@@ -1,5 +1,6 @@
+package Game;
+
 import java.awt.*;
-import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 public class Game {

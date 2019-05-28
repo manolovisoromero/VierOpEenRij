@@ -1,3 +1,6 @@
+package Game;
+
+
 import java.awt.*;
 
 public class Coin {

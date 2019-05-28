@@ -1,11 +1,14 @@
+import Game.Field;
+import Game.Game;
+import Game.Player;
+import Game.Coin;
+import Game.Color;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.awt.*;
 import java.util.ArrayList;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class FieldTest {
 
@@ -17,7 +20,7 @@ class FieldTest {
 
     @BeforeEach
     void setUp(){
-        //Fresh Field instance with mock game parameter
+        //Fresh Game.Field instance with mock game parameter
         player1 = new Player("1");
         player2 = new Player("2");
         ArrayList<Player> players = new ArrayList<Player>();
@@ -43,7 +46,7 @@ class FieldTest {
         //Arrange
         boolean expected = true;
         Point p = new Point(1,1);
-        Coin c = new Coin(player1,Color.RED,p);
+        Coin c = new Coin(player1, Color.RED,p);
 
         //Act
         boolean actual;

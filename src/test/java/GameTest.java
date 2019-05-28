@@ -1,14 +1,15 @@
+import Game.Coin;
+import Game.Field;
+import Game.Game;
+import Game.Player;
+import Game.Color;
 import org.junit.Assert;
-import org.junit.Before;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.awt.*;
 import java.util.ArrayList;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class GameTest {
 
@@ -260,7 +261,7 @@ class GameTest {
         //Arrange
         int x = 1;
         Point expected = new Point(x,5);
-        game.getField().addCoin(new Coin(player1,Color.RED,new Point(x,6)));
+        game.getField().addCoin(new Coin(player1, Color.RED,new Point(x,6)));
 
         //Act
         Point actual = game.whereToDrop(x);
@@ -274,7 +275,7 @@ class GameTest {
         //Arrange
         int x = 1;
         Point expected = new Point(x,1);
-        game.getField().addCoin(new Coin(player1,Color.RED,new Point(x,2)));
+        game.getField().addCoin(new Coin(player1, Color.RED,new Point(x,2)));
 
         //Act
         Point actual = game.whereToDrop(x);
@@ -286,7 +287,7 @@ class GameTest {
     @Test
     void ShouldNotBeAvailable() {
         //Arrange
-        game.getField().addCoin(new Coin(player1,Color.RED,new Point(1,1)));
+        game.getField().addCoin(new Coin(player1, Color.RED,new Point(1,1)));
         boolean expected = false;
 
         //Act
