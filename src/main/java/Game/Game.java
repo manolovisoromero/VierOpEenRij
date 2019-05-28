@@ -55,10 +55,7 @@ public class Game {
 
 
     public boolean Available(int x){
-        if(field.getField()[x][1] == null){
-            return true;
-        }
-        return false;
+        return field.getField()[x][1] == null;
     }
 
     public void HorizontalWin(Coin c){
