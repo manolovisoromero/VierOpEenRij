@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 public class Game {
 
+    private int turn = 0;
+
     public Field getField() {
         return field;
     }
