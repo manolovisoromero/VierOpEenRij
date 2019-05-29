@@ -1,5 +1,6 @@
 package Socketcomm;
 
+import Game.App;
 import org.glassfish.tyrus.client.ClientManager;
 
 import javax.websocket.DeploymentException;
@@ -11,6 +12,7 @@ import java.net.URISyntaxException;
 public class Communicator {
 
     public Session session;
+    public App app;
 
     public Session getSesh(){
         return this.session;
@@ -25,6 +27,8 @@ public class Communicator {
     public Communicator(){
 
     }
+
+
 
     public void start() throws IOException {
         ClientManager client = ClientManager.createClient();
