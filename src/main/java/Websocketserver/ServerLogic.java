@@ -30,9 +30,15 @@ public class ServerLogic {
     }
 
 
-    public void newConnection(Session session){
+    public void newConnection(Session session) throws IOException {
         Connection conn = new Connection(session,Connectiontype.UNDEF);
         addConnection(conn);
+        returnPlayernr(session);
+    }
+
+    public void returnPlayernr(Session session) throws IOException {
+        sendMsg("9"+getConnections().size()+"0",session);
+
     }
 
     public void removeConnection(Session session){
@@ -44,43 +50,41 @@ public class ServerLogic {
         }
     }
 
+    public void sendMsg(String msg, Session session) throws IOException {
+        session.getBasicRemote().sendText(msg);
+    }
+
     public void handleMsg(String msg, Session session) throws IOException {
-        System.out.println("hoiii");
         if(msg.equals("Hoi")){
-            System.out.println("handled1");
             for(Connection c: connections){
-                c.session.getBasicRemote().sendText("Hallo");
+                sendMsg("Hallo",c.session);
+                //c.session.getBasicRemote().sendText("Hallo");
 
             }
-            session.getBasicRemote().sendText("Hallo");
-            System.out.println("hond1");
         }
         if(msg.equals("Communication open")){
-            System.out.println("handled");
             for(Connection c: connections){
-                c.session.getBasicRemote().sendText("1");
+                sendMsg("1",c.session);
             }
         }
-
-        Thread t1 = new Thread(new Runnable() {
-            public void run()
-            {
-                while(true){
+        if(msg.equals("client")) {
+            Thread t1 = new Thread(new Runnable() {
+                public void run() {
                     try {
-                        for (int i = 5; i < 8; i++) {
-                            for (int j = 1; j < 9; j++) {
-                                session.getBasicRemote().sendText("1"+i+j);
+                        for (int i = 0; i < 8; i++) {
+                            for (int j = 0; j < 6; j++) {
+                                Thread.sleep(100);
+                                sendMsg("1"+i+j,session);
+                                //session.getBasicRemote().sendText("1"+i+j);
                             }
-
                         }
-
-                    } catch (IOException e) {
+                    } catch (InterruptedException | IOException e) {
                         e.printStackTrace();
                     }
                 }
-
-            }});
-        t1.start();
+            });
+            t1.start();
+        }
 
     }
 

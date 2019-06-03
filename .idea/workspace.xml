@@ -1,14 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aaa27d24-79ef-48a8-b132-3f675af4d95f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game/GameController.java" afterDir="false" />
+    <list default="true" id="aaa27d24-79ef-48a8-b132-3f675af4d95f" name="Default Changelist" comment="Moved to Game package">
+      <change afterPath="$PROJECT_DIR$/../Zeeslag/src/main/java/client/Connector2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zeeslag/src/main/java/client/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__jakarta_ws_rs_jakarta_ws_rs_api_2_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__javax_javaee_api_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_39.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_15_v20190215.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_15_v20190215.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_4_15_v20190215.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_4_15_v20190215.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_4_15_v20190215.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_15_v20190215.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_grizzly_grizzly_framework_2_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_grizzly_grizzly_http_2_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_grizzly_grizzly_http_server_2_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_hk2_external_jakarta_inject_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_client_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_container_grizzly_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_container_grizzly_client_1_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_container_jdk_client_1_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_core_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_server_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_spi_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_websocket_core_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_openjfx_javafx_base_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_openjfx_javafx_base_win_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_openjfx_javafx_controls_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_openjfx_javafx_controls_win_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_openjfx_javafx_fxml_11_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_11_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_openjfx_javafx_graphics_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/libraries/Maven__org_slf4j_slf4j_api_1_8_0_beta4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/src/main/java/Socketcomm/IObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/src/main/java/Socketcomm/ISubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/src/main/java/Socketcomm/WebSocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/src/main/java/Socketcomm/WordgameClientEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/src/main/java/Socketcomm/WordgameServerEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/src/main/java/Socketcomm/connector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Socketcomm/Communicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Socketcomm/Communicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Game/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Socketcomm/MsgHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Socketcomm/MsgHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Websocketserver/ServerEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Websocketserver/ServerEndpoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zeeslag/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Zeeslag/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zeeslag/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Zeeslag/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zeeslag/src/main/java/client/SeaBattleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Zeeslag/src/main/java/client/SeaBattleApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zeeslag/src/main/java/client/client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Zeeslag/src/main/java/client/client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zeeslag/src/main/java/client/connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Zeeslag/src/main/java/client/connector.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,25 +92,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerEndpoint.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="723">
-              <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="4012">
+              <caret line="236" column="26" selection-start-line="236" selection-start-column="26" selection-end-line="236" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -60,10 +113,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+            <state relative-caret-position="408">
+              <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,10 +125,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Socketcomm/ClientEndpoint.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+            <state relative-caret-position="102">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,14 +137,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Socketcomm/MsgHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="238">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#243#244#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,14 +151,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Game/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
+            <state relative-caret-position="518">
+              <caret line="68" column="17" lean-forward="true" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#1659#1660#0" expanded="true" />
-                <element signature="e#1686#1687#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#735#736#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,7 +167,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Socketcomm/Communicator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
+            <state relative-caret-position="595">
               <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -129,27 +180,39 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Game/GameController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Socketcomm/ClientEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+            <state relative-caret-position="425">
+              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#92#93#0" expanded="true" />
-                <element signature="e#122#123#0" expanded="true" />
-                <element signature="e#204#205#0" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Socketcomm/MsgHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#1500#1501#0" expanded="true" />
+                <element signature="e#1601#1602#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Game/Game.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Game/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-909">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="476">
+              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,6 +233,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>platform</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -187,19 +255,19 @@
         <option value="$PROJECT_DIR$/src/main/java/Websocketserver/SocketServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websocketserver/Connectiontype.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websocketserver/Connection.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Game/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/Socketcomm/ClientEndpoint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Websocketserver/ServerEndpoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/app.java" />
         <option value="$PROJECT_DIR$/src/main/java/GameController.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/Socketcomm/Communicator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Game/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Game/GameController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Game/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Websocketserver/ServerEndpoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/Socketcomm/MsgHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Game/GameController.java" />
       </list>
     </option>
   </component>
@@ -211,9 +279,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1057" />
+    <option name="x" value="737" />
+    <option name="width" value="1190" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -223,74 +291,61 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="VierOpEenRij" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VierOpEenRij" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="VierOpEenRij" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VierOpEenRij" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="VierOpEenRij" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VierOpEenRij" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="VierOpEenRij" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VierOpEenRij" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="VierOpEenRij" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VierOpEenRij" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="VierOpEenRij" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VierOpEenRij" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Socketcomm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="VierOpEenRij" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VierOpEenRij" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Websocketserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,11 +387,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.app">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Game.App" />
       <module name="BigIdea" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\Manolo\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib --add-modules=javafx.controls,javafx.fxml --add-modules=javafx.base" />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\Manol\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib --add-modules=javafx.controls,javafx.fxml --add-modules=javafx.base" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -381,7 +436,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.app" />
+      <item itemvalue="Application.App" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.SocketServer" />
       <item itemvalue="JUnit.GameTest" />
@@ -389,7 +444,7 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.app" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.SocketServer" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.GameTest" />
@@ -411,6 +466,8 @@
       <workItem from="1558964451002" duration="14506000" />
       <workItem from="1559054248728" duration="6637000" />
       <workItem from="1559063786562" duration="10279000" />
+      <workItem from="1559595982601" duration="520000" />
+      <workItem from="1559598561621" duration="1397000" />
     </task>
     <task id="LOCAL-00001" summary="Moved to Game package">
       <created>1559054699312</created>
@@ -455,7 +512,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45733000" />
+    <option name="totallyTimeSpent" value="52121000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -467,9 +524,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16897655" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -478,13 +535,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2829582" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28277355" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32583067" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32502708" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3290461" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3290461" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -501,6 +558,37 @@
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3290461" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32583067" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3290461" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -564,13 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/Connectiontype.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -589,9 +670,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/connector.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Zeeslag/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/Connector2.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/Demo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/SeaBattleApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#38117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../thread/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../thread/src/main/java/Socketcomm/WordgameServerEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Zeeslag/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/client.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../thread/src/main/java/Socketcomm/WordgameClientEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4012">
+          <caret line="236" column="26" selection-start-line="236" selection-start-column="26" selection-end-line="236" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-909">
+        <state relative-caret-position="102">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -601,7 +735,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Socketcomm/Communicator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
+        <state relative-caret-position="595">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -613,22 +747,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Game/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
+        <state relative-caret-position="518">
+          <caret line="68" column="17" lean-forward="true" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -643,10 +771,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Game/GameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+        <state relative-caret-position="476">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -655,8 +783,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Socketcomm/ClientEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
+        <state relative-caret-position="425">
           <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -665,40 +813,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Socketcomm/MsgHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="155">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#243#244#0" expanded="true" />
             <element signature="e#295#296#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Game/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#1659#1660#0" expanded="true" />
-            <element signature="e#1686#1687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Game/GameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#92#93#0" expanded="true" />
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+            <element signature="e#1601#1602#0" expanded="true" />
           </folding>
         </state>
       </provider>

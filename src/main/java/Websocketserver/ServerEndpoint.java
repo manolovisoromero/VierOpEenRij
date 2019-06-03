@@ -10,7 +10,7 @@ public class ServerEndpoint {
     private Logger logger = Logger.getLogger(this.getClass().getName());
 
     @OnOpen
-    public String onOpen(Session session) {
+    public String onOpen(Session session) throws IOException {
         logger.info("Connected...." + session.getId());
         ServerLogic.getInstance().newConnection(session);
         return "open";

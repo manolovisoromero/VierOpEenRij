@@ -25,6 +25,16 @@ public class App extends Application {
     private Stage stage;
     public GameController gameController;
 
+    public void setPlayernr(int playernr) {
+        this.playernr = playernr;
+    }
+
+    public int getPlayernr() {
+        return playernr;
+    }
+
+    private int playernr;
+
     public GridPane getGridPane() {
         return gridPane;
     }
