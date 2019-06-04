@@ -3,10 +3,12 @@ import Game.Field;
 import Game.Game;
 import Game.Player;
 import Game.Color;
+import Websocketserver.Connection;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import javax.websocket.Session;
 import java.awt.*;
 import java.util.ArrayList;
 
@@ -19,8 +21,9 @@ class GameTest {
     @BeforeEach
     void setUp(){
         //Fresh game instance with mock players.
-        player1 = new Player("1");
-        player2 = new Player("2");
+        Connection connection = new Connection(null,null);
+        player1 = new Player("Kees",connection,1);
+        player2 = new Player("Sjaak",connection,2);
         ArrayList<Player> players = new ArrayList<Player>();
         players.add(player1);
         players.add(player2);

@@ -20,8 +20,8 @@ class FieldTest {
     @BeforeEach
     void setUp(){
         //Fresh Game.Field instance with mock game parameter
-        player1 = new Player("1");
-        player2 = new Player("2");
+        //////player1 = new Player("1");
+        //player2 = new Player("2");
         ArrayList<Player> players = new ArrayList<Player>();
         players.add(player1);
         players.add(player2);

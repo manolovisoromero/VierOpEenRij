@@ -1,13 +1,20 @@
 package Game;
 
+import Websocketserver.Connection;
+
+import javax.websocket.Session;
 import java.util.ArrayList;
 
 public class Player {
 
-    public String name;
-    //private Session session;
-    public Player(String name){
+    private String name;
+    private Connection connection;
+    private int playernr;
+
+    public Player(String name,Connection conn, int playernr){
         this.name = name;
+        this.connection = conn;
+        this.playernr = playernr;
     }
 
 }
