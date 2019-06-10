@@ -70,7 +70,9 @@ public class MsgHandler implements IMsgHandler{
 //        }
         Gson gson = new Gson();
         SocketMsg socketMsg = gson.fromJson(msg,SocketMsg.class);
-        System.out.println(socketMsg.p);
+        if(socketMsg.msgType == MsgType.LOGINSUCCES){
+            System.out.println("Login success");
+        }
     }
 
     public void handle9(){
@@ -78,7 +80,7 @@ public class MsgHandler implements IMsgHandler{
     }
 
     public void sendMsg(String msg,Session session) throws IOException, InterruptedException {
-        communicator.send(msg,session);
+        communicator.sendMsg(msg,session);
     }
 
     public void open(Session session){

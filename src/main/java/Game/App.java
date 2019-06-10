@@ -2,6 +2,9 @@ package Game;
 
 import Socketcomm.Communicator;
 import Socketcomm.MsgHandler;
+import Socketcomm.MsgType;
+import Socketcomm.SocketMsg;
+import com.google.gson.Gson;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
@@ -84,7 +87,7 @@ public class App extends Application {
     }
 
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) throws IOException, InterruptedException {
 
         stage.setScene(new Scene(fieldmaker()));
         stage.show();
@@ -93,6 +96,9 @@ public class App extends Application {
         MsgHandler.getInstance().setGameController(this.gameController);
         System.out.println(this.gameController);
         Communicator.getInstance().start();
+        SocketMsg socketMsg = new SocketMsg(MsgType.LOGIN);
+        socketMsg.setLogin("123","123");
+        Communicator.getInstance().sendMsg(new Gson().toJson(socketMsg),Communicator.getInstance().session);
 
     }
 

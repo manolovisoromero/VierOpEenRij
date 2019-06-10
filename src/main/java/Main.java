@@ -23,7 +23,7 @@ public class Main {
                     while(true){
                         try {
                             Thread.sleep(1000);
-                            Communicator.getInstance().send("hoi",Communicator.getInstance().getSesh());
+                            Communicator.getInstance().sendMsg("hoi",Communicator.getInstance().getSesh());
                         } catch (IOException | InterruptedException e) {
                             e.printStackTrace();
                         }
@@ -36,7 +36,7 @@ public class Main {
                     while(true){
                         try {
                             Thread.sleep(1000);
-                            Communicator.getInstance().send("doei",Communicator.getInstance().getSesh());
+                            Communicator.getInstance().sendMsg("doei",Communicator.getInstance().getSesh());
 
                         } catch (IOException | InterruptedException e) {
                             e.printStackTrace();

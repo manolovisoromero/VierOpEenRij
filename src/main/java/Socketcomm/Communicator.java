@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-public class Communicator {
+public class Communicator implements ICommunicator{
 
     public Session session;
     public App app;
@@ -43,7 +43,10 @@ public class Communicator {
         this.session.getBasicRemote().sendText("client");
     }
 
-    public void send(String msg,Session session) throws IOException, InterruptedException {
+
+
+    public void sendMsg(String msg,Session session) throws IOException, InterruptedException {
         session.getBasicRemote().sendText(msg);
     }
+
 }

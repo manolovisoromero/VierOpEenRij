@@ -105,5 +105,12 @@ public class Game {
 
 
 
+    public void GameEnd(){
+        //losing player boolean lose, winner player boolean win
+        //Save game to database:: Games: int game id(fk), int (amount of) moves; Game users: str user, bool win, int game id(pk)
+        //msg players
+        //
+    }
+
 
 }

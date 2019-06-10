@@ -10,11 +10,11 @@ public class Player {
     private String name;
     private Connection connection;
     private int playernr;
+    private boolean win;
 
     public Player(String name,Connection conn, int playernr){
         this.name = name;
         this.connection = conn;
         this.playernr = playernr;
     }
-
 }

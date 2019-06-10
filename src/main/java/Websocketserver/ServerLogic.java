@@ -1,6 +1,9 @@
 package Websocketserver;
 
 import Game.Player;
+import REST.RESTCommunicator;
+import REST.RESTMsg;
+import REST.RESTMsgType;
 import Socketcomm.Communicator;
 import Socketcomm.MsgType;
 import Socketcomm.SocketMsg;
@@ -29,6 +32,9 @@ public class ServerLogic {
         return players;
     }
 
+    public Gson g = new Gson();
+
+
     private ArrayList<Player> players = new ArrayList<>();
 
 
@@ -51,6 +57,16 @@ public class ServerLogic {
         //Player player = new Player()
     }
 
+    public Connection getConnection(Session session){
+        for(Connection c: connections){
+            if(c.session == session){
+                return c;
+            }
+        }
+        return null;
+
+    }
+
     public void returnPlayernr(Session session) throws IOException {
         //sendMsg("9"+decidePlayernr()+"0",session);
     }
@@ -69,12 +85,7 @@ public class ServerLogic {
     }
 
 
-    public void sendMsg(String msg, Session session) throws IOException {
-        SocketMsg socketMsg = new SocketMsg(MsgType.MOVE);
-        socketMsg.p = new Point(2,2);
-        socketMsg.session = session;
-        Gson g = new Gson();
-        System.out.println(socketMsg.p);
+    public void sendMsg(SocketMsg socketMsg, Session session) throws IOException {
         session.getBasicRemote().sendText(g.toJson(socketMsg, SocketMsg.class));
     }
 
@@ -109,11 +120,25 @@ public class ServerLogic {
 //            });
 //            t1.start();
 
-        if(msg.equals("client")) {
-            sendMsg("hoi",session);
+        SocketMsg socketMsg = g.fromJson(msg,SocketMsg.class);
+
+        if(authLogin(socketMsg.user,socketMsg.pass)){
+            getConnection(session).connectiontype = Connectiontype.GAME;
+            socketMsg.msgType = MsgType.LOGINSUCCES;
+            sendMsg(socketMsg,session);
+
         }
-
     }
-
-
+    public boolean authLogin(String user, String pass){
+        RESTCommunicator rcom = new RESTCommunicator();
+        RESTMsg restMsg = new RESTMsg(RESTMsgType.LOGIN);
+        restMsg.setLogin(user,pass);
+        if(rcom.postRegister(restMsg).getRestMsgType() == RESTMsgType.LOGINSUCCES){
+            System.out.println("true");
+            return true;}
+        else{
+            System.out.println("false");
+            return false;
+        }
+    }
 }
