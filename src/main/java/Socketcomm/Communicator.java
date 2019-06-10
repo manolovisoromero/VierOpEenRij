@@ -40,8 +40,9 @@ public class Communicator implements ICommunicator{
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
-        this.session.getBasicRemote().sendText("client");
     }
+
+
 
 
 

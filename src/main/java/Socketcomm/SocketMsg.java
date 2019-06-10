@@ -1,7 +1,11 @@
 package Socketcomm;
 
+import javafx.scene.paint.Color;
+
 import javax.websocket.Session;
-import java.awt.*;
+
+import java.awt.Point;
+
 
 public class SocketMsg {
 

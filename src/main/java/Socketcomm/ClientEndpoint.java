@@ -14,15 +14,12 @@ public class ClientEndpoint {
     private Logger logger = Logger.getLogger(this.getClass().getName());
 
     @OnOpen
-    public void onOpen(Session session) throws IOException, InterruptedException {
-        logger.info("Connected... " + session.getId());
-        MsgHandler.getInstance().sendMsg("Communication open",session);
-    }
+    public void onOpen(Session session) {
+        logger.info("Connected... " + session.getId()); }
 
     @OnMessage
-    public void onMessage(String message, Session session) throws IOException, InterruptedException {
+    public void onMessage(String message, Session session) throws  InterruptedException {
         logger.info("Received...."+ message);
-        //WebsocketComm.getInstance().send(message,session);
         MsgHandler.getInstance().handle(message,session);
     }
 

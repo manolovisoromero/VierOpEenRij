@@ -15,6 +15,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.IOException;
 
 
@@ -67,7 +68,11 @@ public class App extends Application {
                     int finalX = x;
                     int finalY = y;
                     button.setOnAction(e -> {
-                        gameController.buttonHandler(finalX, finalY -1);
+                        try {
+                            gameController.buttonHandler(new Point(finalX,finalY));
+                        } catch (IOException | InterruptedException ex) {
+                            ex.printStackTrace();
+                        }
                     });
                 }
             }
@@ -94,7 +99,6 @@ public class App extends Application {
         this.stage = stage;
         this.gameController = new GameController(this);
         MsgHandler.getInstance().setGameController(this.gameController);
-        System.out.println(this.gameController);
         Communicator.getInstance().start();
         SocketMsg socketMsg = new SocketMsg(MsgType.LOGIN);
         socketMsg.setLogin("123","123");
