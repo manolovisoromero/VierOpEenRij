@@ -56,7 +56,7 @@ public class App extends Application {
     }
 
     public GridPane gridPane;
-    //public Circle [][] circles = new 2Circle [6][7];
+    //public Circle [][] circles = new 2Circle [6][7];h
 
     private GridPane gridPane(){
         GridPane gridpane = new GridPane();
