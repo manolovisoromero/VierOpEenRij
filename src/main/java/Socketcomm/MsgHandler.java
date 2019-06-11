@@ -15,7 +15,6 @@ import java.net.Socket;
 
 public class MsgHandler implements IMsgHandler{
 
-    Session session;
 
     public void setGameController(GameController gameController) {
         this.gameController = gameController;
@@ -39,40 +38,54 @@ public class MsgHandler implements IMsgHandler{
 
 
 
-    public void handle(String msg, Session session) throws InterruptedException {
+    public void handle(String msg, Session session){
         SocketMsg socketMsg = gson.fromJson(msg,SocketMsg.class);
         System.out.println(socketMsg.msgType);
 
 
         switch(socketMsg.msgType){
             case LOGINSUCCES:
+                gameController.app.setPlayernr(socketMsg.playernr);
+                System.out.println("Login success");
                 break;
             case LOGIN:
                 break;
             case MOVE:
-                System.out.println("hallo?");
                 gameController.circleFiller(socketMsg.p,socketMsg.c);
+                switchTurn(socketMsg.playernr);
                 break;
             case LOGINFAIL:
                 break;
             case SPECTATE:
                 break;
-        }
+            case GAMESTART:
+                startTurn(socketMsg.playernr);
+                break;
+            case WIN:
+                Platform.runLater(() -> gameController.showWin(socketMsg.playernr));
+                break;
+    }}
 
-        if(socketMsg.msgType == MsgType.LOGINSUCCES){
-            System.out.println("Login success");
+    public void switchTurn(int playernr){
+        boolean Switch = false;
+        if(playernr == gameController.app.getPlayernr()){
+            Switch = true;
+        }
+        gameController.switchButtons(Switch);
+    }
+
+    public void startTurn(int playernr){
+        if(gameController.app.getPlayernr() != playernr){
+            gameController.switchButtons(true);
+
         }
     }
 
-    public void handle9(){
 
-    }
+
 
     public void sendMsg(String msg,Session session) throws IOException, InterruptedException {
         communicator.sendMsg(msg,session);
     }
 
-    public void open(Session session){
-        this.session = session;
-    }
 }

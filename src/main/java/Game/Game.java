@@ -1,11 +1,30 @@
 package Game;
 
-import java.awt.*;
+import java.awt.Point;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
-public class Game {
+import REST.Server;
+import Websocketserver.IObserver;
+import Websocketserver.ServerLogic;
+import javafx.scene.paint.Color;
 
-    private int turn = 0;
+
+public class Game implements ISubject{
+
+    private int gameID;
+
+    private ArrayList<IObserver> observers = new ArrayList<IObserver>();
+
+    private ServerLogic serverLogic;
+
+
+    public Coin getLastPlayed() {
+        return lastPlayed;
+    }
+
+    public Coin lastPlayed;
 
     public Field getField() {
         return field;
@@ -13,27 +32,40 @@ public class Game {
 
     public boolean win = false;
 
+    Random random = new Random();
+
     private Field field = new Field(this);
     private ArrayList<Player> players;
 
-    public Game(ArrayList<Player> players){
+    public Game(ArrayList<Player> players, ServerLogic serverLogic,int gameID){
         this.players = players;
+        this.serverLogic = serverLogic;
+        Attach(serverLogic);
+        this.gameID = gameID;
     }
 
+    public Player randomStart(ArrayList<Player> players){
+        return players.get(random.nextInt(2));
+    }
 
-    public void playCoin(Player player, int x){
+    public void playCoin(Player player, int x) throws IOException {
         if(Available(x)) {
             Coin c = new Coin(player, decideColor(player),whereToDrop(x));
             getField().addCoin(c);
+            lastPlayed = c;
+            System.out.println(c.getLocation());
+            HorizontalWin(c);
         }
     }
 
     public Color decideColor(Player player){
+
         if(player == players.get(0)){
             return Color.RED;
         }else{
             return Color.YELLOW;
         }
+
     }
 
 
@@ -47,7 +79,7 @@ public class Game {
                 lastavailable.y = y;
                 if(y != 6){
                     y++;
-                }
+                }else{return lastavailable;}
             }else{bottomhit = true;}
         }
         return lastavailable;
@@ -55,24 +87,33 @@ public class Game {
 
 
     public boolean Available(int x){
+        System.out.println(x);
         return field.getField()[x][1] == null;
     }
 
-    public void HorizontalWin(Coin c){
+    public void HorizontalWin(Coin c) throws IOException {
         int j = -3;
         Point p = new Point(c.getLocation());
         for(int i =0;i<4;i++){
-            if(!HoriOutOfBounds(p.x,i )&& notNull(c,j,i)){
+            if(!HoriOutOfBounds(p.x,i )){
+                if(notNull(c,j,i)){
                 if(field.getField()[p.x+j+i][p.y].player == field.getField()[p.x+j+i+1][p.y].player
                         && field.getField()[p.x+j+i+1][p.y].player == field.getField()[p.x+j+i+2][p.y].player
                         && field.getField()[p.x+j+i+2][p.y].player == field.getField()[p.x+j+i+3][p.y].player) {
-                    win = true;
+                    win();
                 }
-
-                }
+                }}
             }
         }
 
+
+
+
+    public void win() throws IOException {
+        win = true;
+        getLastPlayed().player.setWin(true);
+        Notify();
+    }
 
     public boolean HoriOutOfBounds(int x, int i){
         if(x+i <= 6 && x+i-3 >=0){
@@ -82,6 +123,8 @@ public class Game {
 
     public boolean notNull(Coin c,int j, int i){
         Point p = new Point(c.getLocation());
+        System.out.println("ccc"+(field.getField()[p.x][p.y].getLocation().x+j+i+3));
+
 
         if(field.getField()[p.x+j+i][p.y] !=null &&
                  field.getField()[p.x+j+i+1][p.y]!=null
@@ -113,4 +156,27 @@ public class Game {
     }
 
 
+    @Override
+    public void Attach(IObserver o) {
+        observers.add(o);
+
+
+    }
+
+    @Override
+    public void Detach(IObserver o) {
+
+        observers.remove(o);
+
+
+    }
+
+    @Override
+    public void Notify() throws IOException {
+
+        for(int i = 0; i< observers.size(); i++){
+            observers.get(i).update(this);
+        }
+
+    }
 }

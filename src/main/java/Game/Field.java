@@ -12,7 +12,7 @@ public class Field {
 
     Game game;
 
-    private Coin [][] field = new Coin[6][7];
+    private Coin [][] field = new Coin[7][7];
     private ArrayList<Coin> coins = new ArrayList<Coin>();
 
     public Field(Game game){
@@ -20,8 +20,13 @@ public class Field {
     }
 
     public void addCoin(Coin c) {
+
         Point p = c.getLocation();
+
         field[p.x][p.y] = c;
+
+        System.out.println("added"+c.getLocation());
+
     }
 
 

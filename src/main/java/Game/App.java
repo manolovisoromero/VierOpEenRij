@@ -1,11 +1,13 @@
 package Game;
 
+import Database.DatabaseAccess;
 import Socketcomm.Communicator;
 import Socketcomm.MsgHandler;
 import Socketcomm.MsgType;
 import Socketcomm.SocketMsg;
 import com.google.gson.Gson;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -17,6 +19,8 @@ import javafx.stage.Stage;
 
 import java.awt.*;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Random;
 
 
 public class App extends Application {
@@ -25,12 +29,20 @@ public class App extends Application {
     private static final int tilesize = 80;
     private static final int columns = 7;
     private static final int rows = 6;
-    public int hallo = 0;
     private Stage stage;
     public GameController gameController;
+    Random random = new Random();
+    DatabaseAccess dal = new DatabaseAccess();
+
+    public ArrayList<Button> getButtons() {
+        return buttons;
+    }
+
+    private ArrayList<Button> buttons = new ArrayList<>();
 
     public void setPlayernr(int playernr) {
         this.playernr = playernr;
+        Platform.runLater(() -> stage.setTitle("Player "+playernr));
     }
 
     public int getPlayernr() {
@@ -49,7 +61,7 @@ public class App extends Application {
     private GridPane gridPane(){
         GridPane gridpane = new GridPane();
         for (int y = 1; y < rows+1; y++) {
-            for (int x = 0; x < columns+1; x++) {
+            for (int x = 0; x < columns; x++) {
 
                 Pane pane = new Pane();
                 pane.setPrefSize(100,100);
@@ -67,6 +79,7 @@ public class App extends Application {
                     gridpane.add(button,x,y-1);
                     int finalX = x;
                     int finalY = y;
+                    buttons.add(button);
                     button.setOnAction(e -> {
                         try {
                             gameController.buttonHandler(new Point(finalX,finalY));
@@ -101,7 +114,7 @@ public class App extends Application {
         MsgHandler.getInstance().setGameController(this.gameController);
         Communicator.getInstance().start();
         SocketMsg socketMsg = new SocketMsg(MsgType.LOGIN);
-        socketMsg.setLogin("123","123");
+        socketMsg.setLogin("Manolo","12345");
         Communicator.getInstance().sendMsg(new Gson().toJson(socketMsg),Communicator.getInstance().session);
 
     }

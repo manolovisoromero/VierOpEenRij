@@ -2,7 +2,9 @@ import Game.Field;
 import Game.Game;
 import Game.Player;
 import Game.Coin;
-import Game.Color;
+import Websocketserver.ServerLogic;
+import javafx.scene.paint.Color;
+
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -25,7 +27,7 @@ class FieldTest {
         ArrayList<Player> players = new ArrayList<Player>();
         players.add(player1);
         players.add(player2);
-        game = new Game(players);
+        game = new Game(players, ServerLogic.getInstance(),1);
         field = new Field(game);
     }
 

@@ -17,11 +17,13 @@ import netscape.javascript.JSObject;
 
 import javax.websocket.Session;
 import java.awt.Point;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class ServerLogic {
+public class ServerLogic implements IObserver{
 
     //Singleton
     private static ServerLogic serverLogic = new ServerLogic();
@@ -29,6 +31,8 @@ public class ServerLogic {
     public  static ServerLogic getInstance(){
         return serverLogic;
     }
+
+    public Game game;
 
     public ArrayList<Player> getPlayers() {
         return players;
@@ -43,8 +47,7 @@ public class ServerLogic {
         return connections;
     }
 
-
-    public void newConnection(Session session) throws IOException {
+    public void newConnection(Session session) {
         Connection conn = new Connection(session,Connectiontype.UNDEF);
         addConnection(conn);
     }
@@ -56,14 +59,27 @@ public class ServerLogic {
         }return null;
     }
 
-    public void addPlayer(String name,Connection c, int playernr ){
+    public void addPlayer(String name,Connection c, int playernr ) throws IOException {
         Player player = new Player(name,c,playernr);
         players.add(player);
         getConnection(c.session).connectiontype = Connectiontype.GAME;
+        player.setConnection(getConnection(c.session));
+        checkStartgame();
     }
 
-    public void returnPlayernr(Session session) throws IOException {
-        //sendMsg("9"+decidePlayernr()+"0",session);
+    public void checkStartgame() throws IOException {
+        if(players.size() == 2){
+            startGame();
+        }
+
+    }
+
+    public void startGame() throws IOException {
+        this.game = new Game(players,this,1);
+        SocketMsg socketMsg = new SocketMsg(MsgType.GAMESTART);
+        socketMsg.playernr = game.randomStart(players).getPlayernr();
+        System.out.println("Game started, player "+socketMsg.playernr+ " starts.");
+        sendAll(socketMsg);
     }
 
     public int decidePlayernr(){ return this.connections.size();
@@ -78,9 +94,7 @@ public class ServerLogic {
         }
     }
 
-
-    public void sendMsg(SocketMsg socketMsg, Session session) throws IOException {
-        System.out.println(socketMsg.p);
+    public void sendMsg(SocketMsg socketMsg, Session session) throws IOException,ArrayIndexOutOfBoundsException {
         session.getBasicRemote().sendText(g.toJson(socketMsg, SocketMsg.class));
     }
 
@@ -93,17 +107,43 @@ public class ServerLogic {
                 if(authLogin(socketMsg.user,socketMsg.pass)){
                 getConnection(session).connectiontype = Connectiontype.GAME;
                 socketMsg.msgType = MsgType.LOGINSUCCES;
+                socketMsg.playernr = decidePlayernr();
                 sendMsg(socketMsg,session);
                 addPlayer(socketMsg.user,getConnection(session),decidePlayernr());
+                break;
             }
             case MOVE:
-                System.out.println(socketMsg.p.y);
-                socketMsg.p.y = 5;
-                socketMsg.c = Color.GREEN;
-                sendMsg(socketMsg,session);
+                System.out.println("point: "+socketMsg.p);
+                try {
+                    game.playCoin(getPlayer(socketMsg.playernr),socketMsg.p.x);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);}
+                //socketMsg.p.y = game.getLastPlayed().getLocation().y;
+                System.out.println(game.getLastPlayed().getLocation().y);
+                socketMsg.p.y = game.getLastPlayed().getLocation().y - 1;
+
+                socketMsg.c = game.decideColor(getPlayer(socketMsg.playernr));
+                sendAll(socketMsg);
+                break;
         }
+    }
 
+    public void sendAll(SocketMsg socketMsg) throws IOException {
+        for(Connection c: getConnections()){
+            if(c.connectiontype == Connectiontype.GAME){
+                sendMsg(socketMsg,c.session);
+            }
+        }
+    }
 
+    public Player getPlayer(int playernr){
+        for(Player player: players){
+            if(player.getPlayernr() == playernr){
+                return player;
+            }
+        }
+        System.out.println("Error: No player found.(Serverlogic.GetPlayer()");
+        return null;
     }
     public boolean authLogin(String user, String pass){
         RESTCommunicator rcom = new RESTCommunicator();
@@ -116,5 +156,12 @@ public class ServerLogic {
             System.out.println("false");
             return false;
         }
+    }
+
+    @Override
+    public void update(Object o) throws IOException {
+        SocketMsg socketMsg = new SocketMsg(MsgType.WIN);
+        socketMsg.playernr = game.lastPlayed.player.getPlayernr();
+        sendAll(socketMsg);
     }
 }

@@ -6,4 +6,6 @@ public enum MsgType {
     LOGINSUCCES,
     LOGIN,
     SPECTATE,
+    GAMESTART,
+    WIN,
 }

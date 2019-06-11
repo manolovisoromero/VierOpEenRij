@@ -27,7 +27,8 @@ public class LoginEndpoint {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response loginUser(RESTMsg restMsg){
-        return Response.status(200).entity("To be made").build();
+        restlogic.handleMsg(restMsg);
+        return Response.status(200).entity(restlogic.getResponse()).build();
     }
 
 

@@ -2,7 +2,8 @@ import Game.Coin;
 import Game.Field;
 import Game.Game;
 import Game.Player;
-import Game.Color;
+import Websocketserver.ServerLogic;
+import javafx.scene.paint.Color;
 import Websocketserver.Connection;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,6 +11,7 @@ import org.junit.jupiter.api.Test;
 
 import javax.websocket.Session;
 import java.awt.*;
+import java.io.IOException;
 import java.util.ArrayList;
 
 
@@ -27,7 +29,7 @@ class GameTest {
         ArrayList<Player> players = new ArrayList<Player>();
         players.add(player1);
         players.add(player2);
-        game = new Game(players);
+        game = new Game(players, ServerLogic.getInstance(),1);
 
     }
 
@@ -75,7 +77,7 @@ class GameTest {
 
 
     @Test
-    void FourSameCoinsHorizontalShouldWin(){
+    void FourSameCoinsHorizontalShouldWin() throws IOException {
         //Arrange
         boolean expected = true;
         Field field = game.getField();
@@ -100,7 +102,7 @@ class GameTest {
     }
 
     @Test
-    void FourNotSameCoinsHorizontalShouldntWin(){
+    void FourNotSameCoinsHorizontalShouldntWin() throws IOException {
         //Arrange
         boolean expected = false;
         Field field = game.getField();

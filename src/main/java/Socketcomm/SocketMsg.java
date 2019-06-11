@@ -16,6 +16,7 @@ public class SocketMsg {
     public MsgType msgType;
     public String user;
     public String pass;
+    public int playernr;
 
 
     public SocketMsg(MsgType msgType){

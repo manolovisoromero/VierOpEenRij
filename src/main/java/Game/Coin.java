@@ -1,7 +1,9 @@
 package Game;
 
 
-import java.awt.*;
+import java.awt.Point;
+import javafx.scene.paint.Color;
+
 
 public class Coin {
 

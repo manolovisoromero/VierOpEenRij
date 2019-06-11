@@ -17,7 +17,7 @@ public class ServerEndpoint {
     }
 
     @OnMessage
-    public void onMessage(String message, Session session) throws IOException {
+    public void onMessage(String message, Session session) throws IOException, RuntimeException {
         logger.info("Received...."+ message);
         ServerLogic.getInstance().handleMsg(message, session);
     }
