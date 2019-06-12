@@ -48,23 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="209" column="30" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
+            <state relative-caret-position="464">
+              <caret line="231" column="30" selection-start-line="231" selection-start-column="30" selection-end-line="231" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -310,77 +298,6 @@
             <path>
               <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
               <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="REST" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Socketcomm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Websocketserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -529,7 +446,7 @@
       <workItem from="1560289589428" duration="948000" />
       <workItem from="1560330888619" duration="5767000" />
       <workItem from="1560338022449" duration="3112000" />
-      <workItem from="1560341829239" duration="4651000" />
+      <workItem from="1560341829239" duration="7521000" />
     </task>
     <task id="LOCAL-00001" summary="Moved to Game package">
       <created>1559054699312</created>
@@ -608,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560347498597</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="jacoco">
+      <created>1560349244272</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560349244272</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -644,7 +568,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116410000" />
+    <option name="totallyTimeSpent" value="119280000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -710,7 +634,6 @@
     <SUITE FILE_PATH="coverage/BigIdea$GameTest.ic" NAME="GameTest Coverage Results" MODIFIED="1560347714492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/Connector2.java" />
     <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/Demo.java" />
     <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/SeaBattleApplication.java" />
     <entry file="file://$PROJECT_DIR$/../thread/pom.xml" />
@@ -1088,10 +1011,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/jacoco.exec">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="209" column="30" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
+        <state relative-caret-position="464">
+          <caret line="231" column="30" selection-start-line="231" selection-start-column="30" selection-end-line="231" selection-end-column="30" />
         </state>
       </provider>
     </entry>
