@@ -159,8 +159,10 @@ public class ServerLogic implements IObserver{
 
     @Override
     public void update(Object o) throws IOException {
-        SocketMsg socketMsg = new SocketMsg(MsgType.WIN);
-        socketMsg.playernr = game.lastPlayed.player.getPlayernr();
-        sendAll(socketMsg);
+        if(o instanceof Game){
+            SocketMsg socketMsg = new SocketMsg(MsgType.WIN);
+            socketMsg.playernr = ((Game) o).lastPlayed.player.getPlayernr();
+            sendAll(socketMsg);
+        }
     }
 }

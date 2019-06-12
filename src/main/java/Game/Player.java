@@ -18,6 +18,11 @@ public class Player {
     }
 
     private Connection connection;
+
+    public void setPlayernr(int playernr) {
+        this.playernr = playernr;
+    }
+
     private int playernr;
 
     public void setWin(boolean win) {

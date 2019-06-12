@@ -92,6 +92,8 @@ class GameTest {
 
         //Act
         boolean actual = false;
+        game.lastPlayed = c1;
+        game.lastPlayed.player.setPlayernr(1);
         game.HorizontalWin(c1);
         if(game.win){
             actual = true;
