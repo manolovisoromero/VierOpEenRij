@@ -2,16 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaa27d24-79ef-48a8-b132-3f675af4d95f" name="Default Changelist" comment="jacoco">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FieldTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/BigIdea-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Database/DatabaseAccess.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Database/GameDB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Database/IDatabaseAccess.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Database/dbObjectFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Database/gameuserDB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Database/logindataDB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Game/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Game/Coin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Game/Color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Game/Field.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Game/Game.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Game/GameController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Game/ISubject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Game/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Main$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Main$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/REST/IRESTCommunnicator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/REST/IRESTlogic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/REST/LoginEndpoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/REST/RESTCommunicator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/REST/RESTMsg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/REST/RESTMsgType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/REST/RESTlogic$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/REST/RESTlogic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/REST/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Socketcomm/ClientEndpoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Socketcomm/Communicator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Socketcomm/ICommunicator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Socketcomm/IMsgHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Socketcomm/MsgHandler$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Socketcomm/MsgHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Socketcomm/MsgType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Socketcomm/SocketMsg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Websocketserver/Connection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Websocketserver/Connectiontype.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Websocketserver/IObserver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Websocketserver/ServerEndpoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Websocketserver/ServerLogic$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Websocketserver/ServerLogic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Websocketserver/SocketServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/FieldTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/GameTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-FieldTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-GameTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/PlayerTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorld/HelloWorld.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorld/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,44 +96,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="231" column="30" selection-start-line="231" selection-start-column="30" selection-end-line="231" selection-end-column="30" />
+            <state relative-caret-position="205">
+              <caret line="224" column="14" selection-start-line="224" selection-start-column="14" selection-end-line="224" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java">
+        <entry file="file://$PROJECT_DIR$/jacoco.exec">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="121" selection-start-line="121" selection-end-line="121" />
+            <state relative-caret-position="408">
+              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/GameTest.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#7329#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Game/GameController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/PlayerTest.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+            <state relative-caret-position="374">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#457#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Database/logindataDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -298,7 +345,44 @@
             <path>
               <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
               <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigIdea" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -338,6 +422,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\manolo\IdeaProjects\BigIdea" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -446,7 +533,7 @@
       <workItem from="1560289589428" duration="948000" />
       <workItem from="1560330888619" duration="5767000" />
       <workItem from="1560338022449" duration="3112000" />
-      <workItem from="1560341829239" duration="7521000" />
+      <workItem from="1560341829239" duration="9623000" />
     </task>
     <task id="LOCAL-00001" summary="Moved to Game package">
       <created>1559054699312</created>
@@ -532,7 +619,28 @@
       <option name="project" value="LOCAL" />
       <updated>1560349244272</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="jacoco">
+      <created>1560352278053</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1560352278053</updated>
+    </task>
+    <task id="LOCAL-00014" summary="jacoco">
+      <created>1560352411631</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1560352411631</updated>
+    </task>
+    <task id="LOCAL-00015" summary="jacoco">
+      <created>1560353291135</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1560353291135</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -568,7 +676,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119280000" />
+    <option name="totallyTimeSpent" value="121382000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -591,7 +699,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25080386" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25080386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -634,10 +742,6 @@
     <SUITE FILE_PATH="coverage/BigIdea$GameTest.ic" NAME="GameTest Coverage Results" MODIFIED="1560347714492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/Demo.java" />
-    <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/SeaBattleApplication.java" />
-    <entry file="file://$PROJECT_DIR$/../thread/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/../thread/src/main/java/Socketcomm/WordgameServerEndpoint.java" />
     <entry file="file://$PROJECT_DIR$/../Zeeslag/.idea/misc.xml" />
     <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/client.java" />
     <entry file="file://$PROJECT_DIR$/../thread/src/main/java/Socketcomm/WordgameClientEndpoint.java" />
@@ -1011,13 +1115,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/jacoco.exec">
+    <entry file="file://$PROJECT_DIR$/jacoco.exec">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="231" column="30" selection-start-line="231" selection-start-column="30" selection-end-line="231" selection-end-column="30" />
+        <state relative-caret-position="205">
+          <caret line="224" column="14" selection-start-line="224" selection-start-column="14" selection-end-line="224" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jacoco.exec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/GameTest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#7329#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/FieldTest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#1279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/PlayerTest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#457#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
