@@ -42,6 +42,7 @@ class GameTest {
 
         //Assert the expectations
     }
+
     @Test
     void PlacedCoins4ShouldGiveTrue(){
         //Arrange
@@ -91,10 +92,7 @@ class GameTest {
 
         //Act
         boolean actual = false;
-        game.lastPlayed = c1;
-        game.lastPlayed.player.setPlayernr(1);
         game.HorizontalWin(c1);
-        System.out.println(game.lastPlayed.player.getPlayernr());
         if(game.win){
             actual = true;
         }
