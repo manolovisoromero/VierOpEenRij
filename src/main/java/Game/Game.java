@@ -112,6 +112,7 @@ public class Game implements ISubject{
     public void win() throws IOException {
         win = true;
         getLastPlayed().player.setWin(true);
+        System.out.println(getLastPlayed().player.getPlayernr());
         Notify();
     }
 

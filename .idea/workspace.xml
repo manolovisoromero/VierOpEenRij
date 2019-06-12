@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaa27d24-79ef-48a8-b132-3f675af4d95f" name="Default Changelist" comment="Move doorgeven werkt.">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FieldTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorld/HelloWorld.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorld/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GameTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,10 +52,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Game/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+            <state relative-caret-position="391">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,10 +64,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerEndpoint.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/FieldTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="476">
+              <caret line="46" selection-start-line="46" selection-end-line="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,10 +76,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Database/DatabaseAccess.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="-104">
+              <caret line="189" selection-start-line="189" selection-end-line="189" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,38 +97,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Game/App.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="107" column="77" lean-forward="true" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#896#897#0" expanded="true" />
-                <element signature="e#926#927#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTlogic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/REST/LoginEndpoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+            <state relative-caret-position="353">
+              <caret line="165" column="31" selection-start-line="165" selection-start-column="31" selection-end-line="165" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,10 +109,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTCommunicator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="70" column="85" selection-start-line="70" selection-start-column="85" selection-end-line="70" selection-end-column="85" />
+            <state relative-caret-position="348">
+              <caret line="114" column="63" selection-start-line="114" selection-start-column="63" selection-end-line="114" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,10 +121,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTMsg.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Game/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" selection-start-line="19" selection-end-line="23" />
+            <state relative-caret-position="-26">
+              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#199#200#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,7 +162,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/REST/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="374">
               <caret line="25" column="31" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -168,6 +182,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -175,6 +190,29 @@
     <findStrings>
       <find>platform</find>
       <find>MOVE</find>
+      <find>junit</find>
+      <find>core</find>
+      <find>tyrus-core</find>
+      <find>websocket-core</find>
+      <find>tyrus-spi</find>
+      <find>container-grizzly</find>
+      <find>tyrus-container-grizzly</find>
+      <find>tyrus-container-grizzly-client</find>
+      <find>connector-java</find>
+      <find>httpclient</find>
+      <find>gson</find>
+      <find>jersey.inject</find>
+      <find>javafx-grap</find>
+      <find>websocket-api</find>
+      <find>javafx</find>
+      <find>javafx-control</find>
+      <find>javafx-fxml</find>
+      <find>javafx-graphics</find>
+      <find>tyrus-server</find>
+      <find>tyrus-client</find>
+      <find>junit-jupiter</find>
+      <find>jetty-server</find>
+      <find>jetty-servlet</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,7 +232,6 @@
         <option value="$PROJECT_DIR$/src/main/java/app.java" />
         <option value="$PROJECT_DIR$/src/main/java/GameController.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Socketcomm/IMsgHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/REST/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/Socketcomm/ICommunicator.java" />
@@ -218,20 +255,23 @@
         <option value="$PROJECT_DIR$/src/main/java/Websocketserver/ServerEndpoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game/Field.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game/GameController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Game/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Game/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/Database/IDatabaseAccess.java" />
         <option value="$PROJECT_DIR$/src/main/java/Database/GameDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/Database/gameuserDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/Database/logindataDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/Database/dbObjectFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java" />
         <option value="$PROJECT_DIR$/src/test/java/FieldTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GameTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Database/DatabaseAccess.java" />
         <option value="$PROJECT_DIR$/src/main/java/REST/RESTlogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/REST/LoginEndpoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game/App.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Game/PlayerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PlayerTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Game/Player.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GameTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Game/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java" />
       </list>
     </option>
   </component>
@@ -352,8 +392,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558532594432" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$USER_HOME$/Google Drive/School/modue8" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -364,10 +405,14 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Game" />
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -386,18 +431,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.GameTest.FourSameCoinsHorizontalShouldWin">
     <configuration name="App" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Game.App" />
       <module name="BigIdea" />
       <option name="VM_PARAMETERS" value="--module-path C:\Users\Manol\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib --add-modules=javafx.controls,javafx.fxml --add-modules=javafx.base --module-path C:\Users\Manolo\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib --add-modules=javafx.controls,javafx.fxml --add-modules=javafx.base" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="BigIdea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -428,10 +466,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BigIdea" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameTest" />
+      <option name="METHOD_NAME" value="FourSameCoinsHorizontalShouldWin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BigIdea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -439,23 +493,23 @@
     </configuration>
     <list>
       <item itemvalue="Application.App" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.SocketServer" />
       <item itemvalue="Application.Server" />
-      <item itemvalue="JUnit.GameTest" />
+      <item itemvalue="JUnit.PlayerTest" />
+      <item itemvalue="JUnit.GameTest.FourSameCoinsHorizontalShouldWin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest.FourSameCoinsHorizontalShouldWin" />
+        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.SocketServer" />
         <item itemvalue="Application.Server" />
-        <item itemvalue="JUnit.GameTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\manolo\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -475,6 +529,9 @@
       <workItem from="1560176581379" duration="10275000" />
       <workItem from="1560195568087" duration="25467000" />
       <workItem from="1560285680809" duration="3861000" />
+      <workItem from="1560289589428" duration="948000" />
+      <workItem from="1560330888619" duration="5767000" />
+      <workItem from="1560338022449" duration="1391000" />
     </task>
     <task id="LOCAL-00001" summary="Moved to Game package">
       <created>1559054699312</created>
@@ -504,43 +561,50 @@
       <option name="project" value="LOCAL" />
       <updated>1560288304948</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test nieuwe repo">
+      <created>1560289622103</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560289622103</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_HorizontalShouldWin - 2019.05.28 at 00h 57m 26s.xml">
-      <configuration name="GameTest.HorizontalShouldWin" configurationId="JUnit" />
+    <history-entry file="GameTest_FourSameCoinsHorizontalShouldWin - 2019.06.12 at 13h 27m 47s.xml">
+      <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_HorizontalShouldWin - 2019.05.28 at 00h 58m 04s.xml">
-      <configuration name="GameTest.HorizontalShouldWin" configurationId="JUnit" />
+    <history-entry file="GameTest_FourSameCoinsHorizontalShouldWin - 2019.06.12 at 13h 28m 20s.xml">
+      <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_HorizontalShouldWin - 2019.05.28 at 00h 58m 18s.xml">
-      <configuration name="GameTest.HorizontalShouldWin" configurationId="JUnit" />
+    <history-entry file="GameTest_FourSameCoinsHorizontalShouldWin - 2019.06.12 at 13h 29m 22s.xml">
+      <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_FourNotSameCoinsHorizontalShouldntWin - 2019.05.28 at 00h 59m 32s.xml">
-      <configuration name="GameTest.FourNotSameCoinsHorizontalShouldntWin" configurationId="JUnit" />
+    <history-entry file="GameTest_FourSameCoinsHorizontalShouldWin - 2019.06.12 at 13h 29m 52s.xml">
+      <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2019.05.28 at 00h 59m 43s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_FourSameCoinsHorizontalShouldWin - 2019.06.12 at 13h 30m 17s.xml">
+      <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2019.05.28 at 01h 16m 43s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_FourSameCoinsHorizontalShouldWin - 2019.06.12 at 13h 30m 37s.xml">
+      <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2019.05.29 at 11h 59m 28s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_FourSameCoinsHorizontalShouldWin - 2019.06.12 at 13h 31m 58s.xml">
+      <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2019.06.04 at 16h 25m 57s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_FourSameCoinsHorizontalShouldWin - 2019.06.12 at 13h 32m 36s.xml">
+      <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2019.06.10 at 16h 42m 54s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_FourSameCoinsHorizontalShouldWin - 2019.06.12 at 13h 35m 11s.xml">
+      <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2019.06.11 at 15h 55m 12s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_FourSameCoinsHorizontalShouldWin - 2019.06.12 at 13h 36m 29s.xml">
+      <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101932000" />
+    <option name="totallyTimeSpent" value="110038000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -553,9 +617,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25053304" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25586355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -564,7 +627,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20900321" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46623793" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -572,7 +635,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3279743" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3858521" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3279743" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3290461" />
@@ -595,10 +658,10 @@
     <MESSAGE value="Moved to Game package" />
     <MESSAGE value="Move doorgeven werkt." />
     <MESSAGE value="Game begin,spelen tot er horizontale winst is, login via socket&gt;rest&gt;db&gt;, DATA layer voor alle database objecten." />
-    <option name="LAST_COMMIT_MESSAGE" value="Game begin,spelen tot er horizontale winst is, login via socket&gt;rest&gt;db&gt;, DATA layer voor alle database objecten." />
+    <MESSAGE value="test nieuwe repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="test nieuwe repo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Zeeslag/pom.xml" />
     <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/Connector2.java" />
     <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/Demo.java" />
     <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/SeaBattleApplication.java" />
@@ -607,13 +670,6 @@
     <entry file="file://$PROJECT_DIR$/../Zeeslag/.idea/misc.xml" />
     <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/client.java" />
     <entry file="file://$PROJECT_DIR$/../thread/src/main/java/Socketcomm/WordgameClientEndpoint.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4012">
-          <caret line="236" column="26" selection-start-line="236" selection-start-column="26" selection-end-line="236" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/REST/IRESTlogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -682,16 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Game/Coin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Socketcomm/ClientEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -733,16 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Game/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Socketcomm/MsgHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -765,36 +801,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/IObserver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Game/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -855,26 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FieldTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Database/dbObjectFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-136">
@@ -882,10 +872,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Database/DatabaseAccess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="510">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTlogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/REST/LoginEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -894,7 +914,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTCommunicator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
+        <state relative-caret-position="1020">
           <caret line="70" column="85" selection-start-line="70" selection-start-column="85" selection-end-line="70" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -909,16 +929,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTMsgType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Game/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="85">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Game/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Game/Coin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/REST/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="374">
           <caret line="25" column="31" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -926,32 +969,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTlogic.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/FieldTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/REST/LoginEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+        <state relative-caret-position="476">
+          <caret line="46" selection-start-line="46" selection-end-line="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerEndpoint.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="-104">
+          <caret line="189" selection-start-line="189" selection-end-line="189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTMsgType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Game/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="114" column="63" selection-start-line="114" selection-start-column="63" selection-end-line="114" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -960,22 +1041,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+        <state relative-caret-position="353">
+          <caret line="165" column="31" selection-start-line="165" selection-start-column="31" selection-end-line="165" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Game/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="107" column="77" lean-forward="true" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
           </folding>
         </state>
       </provider>
