@@ -53,7 +53,6 @@ public class Game implements ISubject{
             Coin c = new Coin(player, decideColor(player),whereToDrop(x));
             getField().addCoin(c);
             lastPlayed = c;
-            System.out.println(c.getLocation());
             HorizontalWin(c);
         }
     }
@@ -87,7 +86,6 @@ public class Game implements ISubject{
 
 
     public boolean Available(int x){
-        System.out.println(x);
         return field.getField()[x][1] == null;
     }
 
@@ -112,7 +110,6 @@ public class Game implements ISubject{
     public void win() throws IOException {
         win = true;
         getLastPlayed().player.setWin(true);
-        System.out.println(getLastPlayed().player.getPlayernr());
         Notify();
     }
 
@@ -124,7 +121,6 @@ public class Game implements ISubject{
 
     public boolean notNull(Coin c,int j, int i){
         Point p = new Point(c.getLocation());
-        System.out.println("ccc"+(field.getField()[p.x][p.y].getLocation().x+j+i+3));
 
 
         if(field.getField()[p.x+j+i][p.y] !=null &&

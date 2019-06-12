@@ -119,7 +119,6 @@ public class ServerLogic implements IObserver{
                 } catch (Exception e) {
                     throw new RuntimeException(e);}
                 //socketMsg.p.y = game.getLastPlayed().getLocation().y;
-                System.out.println(game.getLastPlayed().getLocation().y);
                 socketMsg.p.y = game.getLastPlayed().getLocation().y - 1;
 
                 socketMsg.c = game.decideColor(getPlayer(socketMsg.playernr));

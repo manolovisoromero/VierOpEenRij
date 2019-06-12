@@ -25,8 +25,6 @@ public class Field {
 
         field[p.x][p.y] = c;
 
-        System.out.println("added"+c.getLocation());
-
     }
 
 
