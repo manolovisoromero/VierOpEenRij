@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaa27d24-79ef-48a8-b132-3f675af4d95f" name="Default Changelist" comment="Move doorgeven werkt.">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FieldTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorld/HelloWorld.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorld/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="413">
-              <caret line="109" column="38" lean-forward="true" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
+              <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="189" selection-start-line="189" selection-end-line="189" />
+            <state relative-caret-position="392">
+              <caret line="204" selection-start-line="204" selection-end-line="204" />
             </state>
           </provider>
         </entry>
@@ -261,12 +257,12 @@
         <option value="$PROJECT_DIR$/src/main/java/Game/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/Game/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/PlayerTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Game/Player.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websocketserver/ServerLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game/Field.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -520,7 +516,7 @@
       <workItem from="1560289589428" duration="948000" />
       <workItem from="1560330888619" duration="5767000" />
       <workItem from="1560338022449" duration="3112000" />
-      <workItem from="1560341829239" duration="2865000" />
+      <workItem from="1560341829239" duration="3138000" />
     </task>
     <task id="LOCAL-00001" summary="Moved to Game package">
       <created>1559054699312</created>
@@ -585,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560342689663</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="jacoco">
+      <created>1560347239967</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1560347239967</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -621,7 +624,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114624000" />
+    <option name="totallyTimeSpent" value="114897000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -681,7 +684,8 @@
     <MESSAGE value="Test systeem werkend." />
     <MESSAGE value="Test clean" />
     <MESSAGE value="sonar" />
-    <option name="LAST_COMMIT_MESSAGE" value="sonar" />
+    <MESSAGE value="jacoco" />
+    <option name="LAST_COMMIT_MESSAGE" value="jacoco" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BigIdea$GameTest.ic" NAME="GameTest Coverage Results" MODIFIED="1560346375033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -967,7 +971,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
-          <caret line="109" column="38" lean-forward="true" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
+          <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1067,8 +1071,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="189" selection-start-line="189" selection-end-line="189" />
+        <state relative-caret-position="392">
+          <caret line="204" selection-start-line="204" selection-end-line="204" />
         </state>
       </provider>
     </entry>
