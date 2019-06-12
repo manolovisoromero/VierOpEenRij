@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaa27d24-79ef-48a8-b132-3f675af4d95f" name="Default Changelist" comment="Move doorgeven werkt.">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/FieldTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
@@ -43,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+            <state relative-caret-position="413">
+              <caret line="109" column="38" lean-forward="true" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,14 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Game/Field.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="177">
+              <caret line="189" selection-start-line="189" selection-end-line="189" />
             </state>
           </provider>
         </entry>
@@ -428,7 +426,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.PlacedCoins4ShouldGiveTrue">
+  <component name="RunManager" selected="JUnit.GameTest">
     <configuration name="App" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Game.App" />
       <module name="BigIdea" />
@@ -437,15 +435,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Websocketserver.SocketServer" />
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BigIdea" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="REST.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -487,18 +481,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.App" />
-      <item itemvalue="Application.SocketServer" />
       <item itemvalue="JUnit.PlayerTest" />
       <item itemvalue="JUnit.GameTest.FourSameCoinsHorizontalShouldWin" />
       <item itemvalue="JUnit.GameTest.PlacedCoins4ShouldGiveTrue" />
+      <item itemvalue="JUnit.GameTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest" />
         <item itemvalue="JUnit.GameTest.PlacedCoins4ShouldGiveTrue" />
         <item itemvalue="JUnit.GameTest.FourSameCoinsHorizontalShouldWin" />
         <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.SocketServer" />
       </list>
     </recent_temporary>
   </component>
@@ -526,7 +520,7 @@
       <workItem from="1560289589428" duration="948000" />
       <workItem from="1560330888619" duration="5767000" />
       <workItem from="1560338022449" duration="3112000" />
-      <workItem from="1560341829239" duration="768000" />
+      <workItem from="1560341829239" duration="2865000" />
     </task>
     <task id="LOCAL-00001" summary="Moved to Game package">
       <created>1559054699312</created>
@@ -577,13 +571,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560340154463</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="sonar">
+      <created>1560342623349</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1560342623349</updated>
+    </task>
+    <task id="LOCAL-00009" summary="sonar">
+      <created>1560342689663</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560342689663</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_FourSameCoinsHorizontalShouldWin - 2019.06.12 at 13h 29m 52s.xml">
-      <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameTest_FourSameCoinsHorizontalShouldWin - 2019.06.12 at 13h 30m 17s.xml">
       <configuration name="GameTest.FourSameCoinsHorizontalShouldWin" configurationId="JUnit" />
     </history-entry>
@@ -611,9 +616,12 @@
     <history-entry file="GameTest_PlacedCoins4ShouldGiveTrue - 2019.06.12 at 13h 48m 13s.xml">
       <configuration name="GameTest.PlacedCoins4ShouldGiveTrue" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameTest - 2019.06.12 at 15h 32m 58s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112527000" />
+    <option name="totallyTimeSpent" value="114624000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -626,8 +634,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2585288" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2585288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -644,10 +653,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3279743" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3858521" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3858521" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3279743" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3290461" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -670,7 +680,11 @@
     <MESSAGE value="test nieuwe repo" />
     <MESSAGE value="Test systeem werkend." />
     <MESSAGE value="Test clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test clean" />
+    <MESSAGE value="sonar" />
+    <option name="LAST_COMMIT_MESSAGE" value="sonar" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BigIdea$GameTest.ic" NAME="GameTest Coverage Results" MODIFIED="1560346375033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../Zeeslag/src/main/java/client/Connector2.java" />
@@ -943,13 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="189" selection-start-line="189" selection-end-line="189" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTMsgType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -959,8 +966,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+        <state relative-caret-position="413">
+          <caret line="109" column="38" lean-forward="true" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1055,6 +1062,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="189" selection-start-line="189" selection-end-line="189" />
         </state>
       </provider>
     </entry>
