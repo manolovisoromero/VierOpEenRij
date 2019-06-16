@@ -1,8 +1,8 @@
-import Game.Field;
-import Game.Game;
-import Game.Player;
-import Game.Coin;
-import Websocketserver.ServerLogic;
+import game.Field;
+import game.Game;
+import game.Player;
+import game.Coin;
+import websocketServer.ServerLogic;
 import javafx.scene.paint.Color;
 
 import org.junit.Assert;
@@ -21,7 +21,7 @@ class FieldTest {
 
     @BeforeEach
     void setUp(){
-        //Fresh Game.Field instance with mock game parameter
+        //Fresh game.Field instance with mock game parameter
         //////player1 = new Player("1");
         //player2 = new Player("2");
         ArrayList<Player> players = new ArrayList<Player>();

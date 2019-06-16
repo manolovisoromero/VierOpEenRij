@@ -1,15 +1,14 @@
-import Game.Coin;
-import Game.Field;
-import Game.Game;
-import Game.Player;
-import Websocketserver.ServerLogic;
+import game.Coin;
+import game.Field;
+import game.Game;
+import game.Player;
+import websocketServer.ServerLogic;
 import javafx.scene.paint.Color;
-import Websocketserver.Connection;
+import websocketServer.Connection;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import javax.websocket.Session;
 import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -84,7 +83,7 @@ class GameTest {
         boolean actual = false;
         game.lastPlayed = c1;
         game.lastPlayed.player.setPlayernr(1);
-        game.HorizontalWin(c1);
+        game.horizontalWin(c1);
         if(game.win){
             actual = true;
         }
@@ -109,7 +108,7 @@ class GameTest {
 
         //Act
         boolean actual = false;
-        game.HorizontalWin(c1);
+        game.horizontalWin(c1);
         if(game.win){
             actual = true;
         }
@@ -130,7 +129,7 @@ class GameTest {
         boolean expected = true;
 
         //Act
-        boolean actual = game.HoriOutOfBounds(1,0);
+        boolean actual = game.horiOutOfBounds(1,0);
 
         //Assert
         Assert.assertEquals(expected,actual);
@@ -142,7 +141,7 @@ class GameTest {
         boolean expected = false;
 
         //Act
-        boolean actual = game.HoriOutOfBounds(1,3);
+        boolean actual = game.horiOutOfBounds(1,3);
 
         //Assert
         Assert.assertEquals(expected,actual);
@@ -154,7 +153,7 @@ class GameTest {
         boolean expected = false;
 
         //Act
-        boolean actual = game.HoriOutOfBounds(6,0);
+        boolean actual = game.horiOutOfBounds(6,0);
 
         //Assert
         Assert.assertEquals(expected,actual);
@@ -166,7 +165,7 @@ class GameTest {
         boolean expected = true;
 
         //Act
-        boolean actual = game.HoriOutOfBounds(6, 1);
+        boolean actual = game.horiOutOfBounds(6, 1);
 
         //Assert
         Assert.assertEquals(expected,actual);
@@ -180,7 +179,7 @@ class GameTest {
         boolean expected = true;
 
         //Act
-        boolean actual = game.VertOutOfBounds(1,0);
+        boolean actual = game.vertOutOfBounds(1,0);
 
         //Assert
         Assert.assertEquals(expected,actual);
@@ -192,7 +191,7 @@ class GameTest {
         boolean expected = false;
 
         //Act
-        boolean actual = game.VertOutOfBounds(1,3);
+        boolean actual = game.vertOutOfBounds(1,3);
 
         //Assert
         Assert.assertEquals(expected,actual);
@@ -204,7 +203,7 @@ class GameTest {
         boolean expected = false;
 
         //Act
-        boolean actual = game.VertOutOfBounds(7,0);
+        boolean actual = game.vertOutOfBounds(7,0);
 
         //Assert
         Assert.assertEquals(expected,actual);
@@ -216,7 +215,7 @@ class GameTest {
         boolean expected = true;
 
         //Act
-        boolean actual = game.VertOutOfBounds(7, 1);
+        boolean actual = game.vertOutOfBounds(7, 1);
 
         //Assert
         Assert.assertEquals(expected,actual);
