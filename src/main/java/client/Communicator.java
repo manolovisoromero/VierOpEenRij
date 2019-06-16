@@ -35,10 +35,10 @@ public class Communicator implements ICommunicator {
         this.session = null;
         try {
             this.session = client.connectToServer(ClientEndpoint.class, new URI("ws://localhost:8025/websockets/game"));
-        } catch (DeploymentException e) {
+        } catch (DeploymentException | URISyntaxException e) {
             e.printStackTrace();
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
+            Thread.currentThread().interrupt();
+
         }
     }
 
@@ -46,8 +46,14 @@ public class Communicator implements ICommunicator {
 
 
 
-    public void sendMsg(String msg,Session session) throws IOException, InterruptedException {
-        session.getBasicRemote().sendText(msg);
+    public void sendMsg(String msg,Session session) {
+        try {
+            session.getBasicRemote().sendText(msg);
+        } catch (IOException e) {
+            e.printStackTrace();
+            Thread.currentThread().interrupt();
+
+        }
     }
 
 }

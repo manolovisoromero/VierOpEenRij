@@ -43,7 +43,7 @@ public class DatabaseAccess implements IDatabaseAccess{
                 factory.createDBuser(rs.getString(1), rs.getString(2));
             }
 
-            con.close();
+
 
         }catch(Exception e){ System.out.println(e);}
         return factory.getLogindatasDB();

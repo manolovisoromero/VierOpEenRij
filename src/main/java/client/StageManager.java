@@ -45,9 +45,9 @@ public class StageManager implements  IStageManager{
     private Stage GameStage;
 
     //GameStage numbers
-    private static final int TILESIZE = 80;
-    private static final int COLUMNS = 7;
-    private static final int ROWS = 6;
+    private static final double TILESIZE = 80;
+    private static final double COLUMNS = 7;
+    private static final double ROWS = 6;
 
 
 
@@ -87,6 +87,8 @@ public class StageManager implements  IStageManager{
                             gameController.buttonHandler(new Point(finalX,finalY));
                         } catch (IOException | InterruptedException ex) {
                             ex.printStackTrace();
+                            Thread.currentThread().interrupt();
+
                         }
                     });
                 }
@@ -114,6 +116,8 @@ public class StageManager implements  IStageManager{
                 loginController.login(user.getText(),pass.getText());
             } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
+                Thread.currentThread().interrupt();
+
             }
         });
         register.setOnAction(actionEvent -> {
@@ -121,6 +125,8 @@ public class StageManager implements  IStageManager{
                 loginController.register(user.getText(),pass.getText());
             } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
+                Thread.currentThread().interrupt();
+
             }
         });
         gridPane.add(userlabel,0,0);

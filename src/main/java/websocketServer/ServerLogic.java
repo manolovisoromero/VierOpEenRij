@@ -13,6 +13,7 @@ import javax.websocket.Session;
 import java.io.IOException;
 
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.logging.Logger;
 
 public class ServerLogic implements IObserver{
@@ -59,7 +60,8 @@ public class ServerLogic implements IObserver{
     private void addPlayer(String name, Connection c, int playernr) throws IOException, InterruptedException {
         Player player = new Player(name,c,playernr);
         players.add(player);
-        getConnection(c.session).connectiontype = Connectiontype.GAME;
+        Objects.requireNonNull(getConnection(c.session)).connectiontype = Connectiontype.GAME;
+
         player.setConnection(getConnection(c.session));
         checkStartgame();
     }
@@ -100,7 +102,7 @@ public class ServerLogic implements IObserver{
         switch(socketMsg.msgType){
             case LOGIN:
                 if(authLogin(socketMsg.user,socketMsg.pass)){
-                getConnection(session).connectiontype = Connectiontype.GAME;
+                Objects.requireNonNull(getConnection(session)).connectiontype = Connectiontype.GAME;
                 socketMsg.msgType = MsgType.LOGINSUCCES;
                 socketMsg.playernr = decidePlayernr();
                 sendMsg(socketMsg,session);
