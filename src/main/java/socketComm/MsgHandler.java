@@ -71,6 +71,7 @@ public class MsgHandler implements IMsgHandler{
             case REGISTER:
                 break;
             case REGSUCCES:
+                Platform.runLater(() -> loginController.logError("Register completed."));
                 break;
             case REGFAIL:
                 Platform.runLater(() -> loginController.regError(socketMsg.msg));
