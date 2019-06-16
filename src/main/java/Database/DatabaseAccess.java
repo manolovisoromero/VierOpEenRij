@@ -9,17 +9,16 @@ import java.util.ArrayList;
 public class DatabaseAccess implements IDatabaseAccess{
 
     private String url = "jdbc:mysql://localhost:3306/vieropeenrij";
-    private String username = "Manolo";
-    private String password = "12345";
+    private String dbusername = "Manolo";
+    private String dbpassword = "12345";
     private dbObjectFactory factory = dbObjectFactory.getInstance();
 
     public Connection connect() {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con= DriverManager.getConnection(
-                    url,username,password);
 
-            return con;
+            return DriverManager.getConnection(
+                    url,dbusername,dbpassword);
         }catch(Exception e){ System.out.println(e);}
 
         return null;
@@ -36,7 +35,7 @@ public class DatabaseAccess implements IDatabaseAccess{
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con=DriverManager.getConnection(
-                    url,username,password);
+                    url,dbusername,dbpassword);
 
             Statement stmt=con.createStatement();
             testquery = "select * from logindata";
@@ -59,23 +58,22 @@ public class DatabaseAccess implements IDatabaseAccess{
     }
 
 
-//    public void queryINSERT() {
-//        try{
-//            Class.forName("com.mysql.jdbc.Driver");
-//            Connection con=DriverManager.getConnection(
-//                    url,username,password);
-//
-//            Statement stmt=con.createStatement();
-//
-//            //String testquery = "INSERT INTO `leerlingen`(`Name`, `Id`, `Presence`) VALUES ("+"Name"+","+info.getId()+","+info.isPresence()+")";
-//            String testquery = "INSERT INTO `leerlingen`(`Name`, `Id`, `Presence`) VALUES ('"+info.getName()+"', 1, true)";
-//            System.out.println(testquery);
-//            stmt.executeUpdate(testquery);
-//
-//            con.close();
-//
-//        }catch(Exception e){ System.out.println(e);}
-//
-//
-//    }
+    public void registerUser(String username, String password) {
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con=DriverManager.getConnection(
+                    url,dbusername,dbpassword);
+
+            Statement stmt=con.createStatement();
+
+            String testquery = "INSERT INTO `logindata`(`Username`, `Password`) VALUES ('"+username+"','"+password+"')";
+            System.out.println(testquery);
+            stmt.executeUpdate(testquery);
+
+            con.close();
+
+        }catch(Exception e){ System.out.println(e);}
+
+
+    }
 }

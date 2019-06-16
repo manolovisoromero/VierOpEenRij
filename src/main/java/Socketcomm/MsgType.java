@@ -8,4 +8,7 @@ public enum MsgType {
     SPECTATE,
     GAMESTART,
     WIN,
+    REGISTER,
+    REGSUCCES,
+    REGFAIL,
 }

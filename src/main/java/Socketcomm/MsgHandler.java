@@ -3,6 +3,8 @@ package Socketcomm;
 
 import Game.App;
 import Game.GameController;
+import Game.LoginController;
+import Game.StageManager;
 import javafx.application.Platform;
 import com.google.gson.Gson;
 
@@ -20,7 +22,11 @@ public class MsgHandler implements IMsgHandler{
         this.gameController = gameController;
     }
 
-    public GameController gameController;
+    private GameController gameController;
+
+    public void setLoginController(LoginController loginController) { this.loginController = loginController; }
+
+    private LoginController loginController;
 
     public Gson gson = new Gson();
 
@@ -30,7 +36,7 @@ public class MsgHandler implements IMsgHandler{
         return handler;
     }
 
-    Communicator communicator = new Communicator();
+    private Communicator communicator = new Communicator();
 
     public MsgHandler(){
 
@@ -41,12 +47,14 @@ public class MsgHandler implements IMsgHandler{
     public void handle(String msg, Session session){
         SocketMsg socketMsg = gson.fromJson(msg,SocketMsg.class);
         System.out.println(socketMsg.msgType);
+        System.out.print(gson.toJson(socketMsg, SocketMsg.class));
 
 
         switch(socketMsg.msgType){
             case LOGINSUCCES:
-                gameController.app.setPlayernr(socketMsg.playernr);
-                System.out.println("Login success");
+                System.out.println(gameController);
+                loginController.startGameWindow();
+                StageManager.getInstance().setPlayernr(socketMsg.playernr);
                 break;
             case LOGIN:
                 break;
@@ -55,27 +63,35 @@ public class MsgHandler implements IMsgHandler{
                 switchTurn(socketMsg.playernr);
                 break;
             case LOGINFAIL:
+                Platform.runLater(() -> loginController.logError(socketMsg.msg));
                 break;
             case SPECTATE:
                 break;
             case GAMESTART:
                 startTurn(socketMsg.playernr);
                 break;
+            case REGISTER:
+                break;
+            case REGSUCCES:
+                break;
+            case REGFAIL:
+                Platform.runLater(() -> loginController.regError(socketMsg.msg));
+                break;
             case WIN:
                 Platform.runLater(() -> gameController.showWin(socketMsg.playernr));
                 break;
     }}
 
-    public void switchTurn(int playernr){
+    private void switchTurn(int playernr){
         boolean Switch = false;
-        if(playernr == gameController.app.getPlayernr()){
+        if(playernr == gameController.stageManager.getPlayernr()){
             Switch = true;
         }
         gameController.switchButtons(Switch);
     }
 
-    public void startTurn(int playernr){
-        if(gameController.app.getPlayernr() != playernr){
+    private void startTurn(int playernr){
+        if(gameController.stageManager.getPlayernr() != playernr){
             gameController.switchButtons(true);
 
         }

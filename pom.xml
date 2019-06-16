@@ -8,21 +8,17 @@
         <maven.compiler.target>11</maven.compiler.target>
         <jersey-server.version>2.27</jersey-server.version>
         <jetty-server.version>9.4.14.v20181114</jetty-server.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.jupiter.version>5.4.2</junit.jupiter.version>
-
-
     </properties>
 
     <groupId>Fontys</groupId>
     <artifactId>BigIdea</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
-        <!-- Junit5 for unit testing -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.0.3</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.6.2</version>
             <scope>test</scope>
         </dependency>
 
@@ -38,7 +34,12 @@
             <version>11.0.2</version>
         </dependency>
 
-
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-graphics</artifactId>
@@ -49,11 +50,7 @@
             <artifactId>jetty-server</artifactId>
             <version>${jetty-server.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-servlet</artifactId>
-            <version>${jetty-server.version}</version>
-        </dependency>
+
 
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
@@ -88,7 +85,6 @@
             <version>2.3.1</version>
         </dependency>
 
-
         <!--  Gson: Java to Json conversion -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -108,22 +104,20 @@
             <version>9.4.15.v20190215</version>
         </dependency>
 
+
+
         <dependency>
-            <groupId>org.glassfish.tyrus</groupId>
-            <artifactId>tyrus-server</artifactId>
-            <version>1.1</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.39</version>
         </dependency>
-        <dependency>
-            <groupId>org.glassfish.tyrus</groupId>
-            <artifactId>tyrus-client</artifactId>
-            <version>1.1</version>
-        </dependency>
+
+
         <dependency>
             <groupId>org.glassfish.tyrus</groupId>
             <artifactId>tyrus-container-grizzly</artifactId>
             <version>1.2.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.glassfish.tyrus/tyrus-core -->
 
         <!-- https://mvnrepository.com/artifact/org.glassfish.tyrus/tyrus-container-grizzly-client -->
         <dependency>
@@ -132,12 +126,7 @@
             <version>1.15</version>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.glassfish.tyrus/tyrus-spi -->
-        <dependency>
-            <groupId>org.glassfish.tyrus</groupId>
-            <artifactId>tyrus-spi</artifactId>
-            <version>1.1</version>
-        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.glassfish.tyrus/tyrus-websocket-core -->
         <dependency>
             <groupId>org.glassfish.tyrus</groupId>
@@ -150,36 +139,50 @@
             <artifactId>tyrus-core</artifactId>
             <version>1.2.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/javax.websocket/javax.websocket-api -->
+
         <dependency>
             <groupId>javax.websocket</groupId>
             <artifactId>javax.websocket-api</artifactId>
-            <version>1.1</version>
-            <scope>provided</scope>
+            <version>1.0</version>
         </dependency>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.8.2</version>
-            <scope>test</scope>
+            <groupId>org.glassfish.tyrus</groupId>
+            <artifactId>tyrus-server</artifactId>
+            <version>1.1</version>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.5.6</version>
+            <groupId>org.glassfish.tyrus</groupId>
+            <artifactId>tyrus-client</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.3.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>9.4.15.v20190215</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet-core</artifactId>
             <version>2.28</version>
         </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.glassfish.tyrus/tyrus-spi -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.39</version>
+            <groupId>org.glassfish.tyrus</groupId>
+            <artifactId>tyrus-spi</artifactId>
+            <version>1.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.glassfish.tyrus/tyrus-core -->
 
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -187,71 +190,7 @@
             <version>3.1</version>
         </dependency>
 
-
-
     </dependencies>
-    <build>
-            <plugins>
-                <plugin>
-                    <groupId>org.jacoco</groupId>
-                    <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>0.8.3</version>
-                    <executions>
-                        <execution>
-                            <id>default-prepare-agent</id>
-                            <goals>
-                                <goal>prepare-agent</goal>
-                            </goals>
-                        </execution>
-                        <execution>
-                            <id>default-report</id>
-                            <phase>prepare-package</phase>
-                            <goals>
-                                <goal>report</goal>
-                            </goals>
-                        </execution>
-                        <execution>
-                            <id>default-check</id>
-                            <goals>
-                                <goal>check</goal>
-                            </goals>
-                            <configuration>
-                                <rules>
-                                    <rule>
-                                        <element>BUNDLE</element>
-                                        <limits>
-                                            <limit>
-                                                <counter>COMPLEXITY</counter>
-                                                <value>COVEREDRATIO</value>
-                                                <minimum>0.20</minimum>
-                                            </limit>
-                                        </limits>
-                                    </rule>
-                                </rules>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
-
-                <plugin>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <!-- latest version (2.20.1) does not work well with JUnit5 -->
-                    <version>2.19.1</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>org.junit.platform</groupId>
-                            <artifactId>junit-platform-surefire-provider</artifactId>
-                            <version>1.0.3</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>org.junit.jupiter</groupId>
-                            <artifactId>junit-jupiter-engine</artifactId>
-                            <version>5.0.3</version>
-                        </dependency>
-                    </dependencies>
-                </plugin>
-        </plugins>
-    </build>
 
 
 </project>

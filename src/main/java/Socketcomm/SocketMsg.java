@@ -9,7 +9,7 @@ import java.awt.Point;
 
 public class SocketMsg {
 
-    private String msg;
+    public String msg;
     public Session session;
     public Point p;
     public Color c;

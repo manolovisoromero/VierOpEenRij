@@ -15,7 +15,6 @@ public class Server {
 
         server.start();
         server.join();
-
     }
 
     private static Handler getJerseyHandler() {

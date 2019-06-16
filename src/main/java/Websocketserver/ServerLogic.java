@@ -34,32 +34,34 @@ public class ServerLogic implements IObserver{
 
     public Game game;
 
+    private String resterror = "";
+
     public ArrayList<Player> getPlayers() {
         return players;
     }
-    public Gson g = new Gson();
+    private Gson g = new Gson();
     private ArrayList<Player> players = new ArrayList<>();
     private ArrayList<Connection> connections = new ArrayList<>();
 
-    public void addConnection(Connection connection){ connections.add(connection);}
+    private void addConnection(Connection connection){ connections.add(connection);}
 
-    public ArrayList<Connection> getConnections() {
+    private ArrayList<Connection> getConnections() {
         return connections;
     }
 
-    public void newConnection(Session session) {
+    void newConnection(Session session) {
         Connection conn = new Connection(session,Connectiontype.UNDEF);
         addConnection(conn);
     }
 
-    public Connection getConnection(Session session){
+    private Connection getConnection(Session session){
         for(Connection c: connections){
             if(c.session == session){
                 return c; }
         }return null;
     }
 
-    public void addPlayer(String name,Connection c, int playernr ) throws IOException {
+    private void addPlayer(String name, Connection c, int playernr) throws IOException, InterruptedException {
         Player player = new Player(name,c,playernr);
         players.add(player);
         getConnection(c.session).connectiontype = Connectiontype.GAME;
@@ -67,14 +69,15 @@ public class ServerLogic implements IObserver{
         checkStartgame();
     }
 
-    public void checkStartgame() throws IOException {
+    private void checkStartgame() throws IOException, InterruptedException {
         if(players.size() == 2){
+            Thread.sleep(2000);
             startGame();
         }
 
     }
 
-    public void startGame() throws IOException {
+    private void startGame() throws IOException {
         this.game = new Game(players,this,1);
         SocketMsg socketMsg = new SocketMsg(MsgType.GAMESTART);
         socketMsg.playernr = game.randomStart(players).getPlayernr();
@@ -82,23 +85,20 @@ public class ServerLogic implements IObserver{
         sendAll(socketMsg);
     }
 
-    public int decidePlayernr(){ return this.connections.size();
+    private int decidePlayernr(){ return this.players.size()+1;
     }
 
-    public void removeConnection(Session session){
-        Iterator<Connection> iter = connections.iterator();
-        while(iter.hasNext()){
-            if(iter.next().session == session){
-                iter.remove();
-            }
-        }
+    void removeConnection(Session session){
+        connections.removeIf(connection -> connection.session == session);
     }
 
-    public void sendMsg(SocketMsg socketMsg, Session session) throws IOException,ArrayIndexOutOfBoundsException {
+    private void sendMsg(SocketMsg socketMsg, Session session) throws IOException,ArrayIndexOutOfBoundsException {
+        System.out.println("sending"+g.toJson(socketMsg, SocketMsg.class));
         session.getBasicRemote().sendText(g.toJson(socketMsg, SocketMsg.class));
     }
 
-    public void handleMsg(String msg, Session session) throws IOException {
+    void handleMsg(String msg, Session session) throws IOException, InterruptedException {
+        System.out.println(msg);
 
         SocketMsg socketMsg = g.fromJson(msg,SocketMsg.class);
 
@@ -111,14 +111,26 @@ public class ServerLogic implements IObserver{
                 sendMsg(socketMsg,session);
                 addPlayer(socketMsg.user,getConnection(session),decidePlayernr());
                 break;
-            }
+            }else{
+                    socketMsg.msgType = MsgType.LOGINFAIL;
+                    socketMsg.msg = resterror;
+                    sendMsg(socketMsg,session);
+            break;}
+            case REGISTER:
+                if(authRegister(socketMsg.user,socketMsg.pass)){
+                    socketMsg.msgType = MsgType.REGSUCCES;
+                    sendMsg(socketMsg,session);
+                    break;
+                }else{socketMsg.msgType = MsgType.REGFAIL;
+                    socketMsg.msg = resterror;
+                    sendMsg(socketMsg,session);
+                    break;}
             case MOVE:
                 System.out.println("point: "+socketMsg.p);
                 try {
                     game.playCoin(getPlayer(socketMsg.playernr),socketMsg.p.x);
                 } catch (Exception e) {
                     throw new RuntimeException(e);}
-                //socketMsg.p.y = game.getLastPlayed().getLocation().y;
                 socketMsg.p.y = game.getLastPlayed().getLocation().y - 1;
 
                 socketMsg.c = game.decideColor(getPlayer(socketMsg.playernr));
@@ -127,7 +139,7 @@ public class ServerLogic implements IObserver{
         }
     }
 
-    public void sendAll(SocketMsg socketMsg) throws IOException {
+    private void sendAll(SocketMsg socketMsg) throws IOException {
         for(Connection c: getConnections()){
             if(c.connectiontype == Connectiontype.GAME){
                 sendMsg(socketMsg,c.session);
@@ -135,7 +147,7 @@ public class ServerLogic implements IObserver{
         }
     }
 
-    public Player getPlayer(int playernr){
+    private Player getPlayer(int playernr){
         for(Player player: players){
             if(player.getPlayernr() == playernr){
                 return player;
@@ -144,17 +156,36 @@ public class ServerLogic implements IObserver{
         System.out.println("Error: No player found.(Serverlogic.GetPlayer()");
         return null;
     }
-    public boolean authLogin(String user, String pass){
+    private boolean authLogin(String user, String pass){
         RESTCommunicator rcom = new RESTCommunicator();
         RESTMsg restMsg = new RESTMsg(RESTMsgType.LOGIN);
         restMsg.setLogin(user,pass);
-        if(rcom.postRegister(restMsg).getRestMsgType() == RESTMsgType.LOGINSUCCES){
+        final RESTMsg restAnswer = rcom.postRegister(restMsg);
+        if(restAnswer.getRestMsgType() == RESTMsgType.LOGINSUCCES){
             System.out.println("true");
             return true;}
         else{
+            resterror = restAnswer.msg;
             System.out.println("false");
             return false;
         }
+    }
+
+    private boolean authRegister(String user,String pass){
+        RESTCommunicator rcom = new RESTCommunicator();
+        RESTMsg restMsg = new RESTMsg(RESTMsgType.REGISTER);
+        restMsg.setLogin(user,pass);
+        final RESTMsg restAnswer = rcom.postRegister(restMsg);
+        if(restAnswer.getRestMsgType() == RESTMsgType.REGSUCCES){
+            System.out.println("true");
+            return true;}
+        else{
+            resterror = restAnswer.msg;
+            System.out.println("false");
+            return false;
+        }
+
+
     }
 
     @Override

@@ -5,6 +5,7 @@ import Socketcomm.Communicator;
 import Socketcomm.MsgType;
 import Socketcomm.SocketMsg;
 import com.google.gson.Gson;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -22,42 +23,45 @@ import javafx.stage.Stage;
 
 import java.awt.*;
 import java.io.IOException;
+import java.util.Objects;
 
 public class GameController {
 
 
 
-    public App app;
-    public Communicator communicator = Communicator.getInstance();
+    public StageManager stageManager = StageManager.getInstance();
+    private Communicator communicator = Communicator.getInstance();
     public Gson gson = new Gson();
 
-    public GameController(App app){
-        this.app = app;
-    }
+    GameController(){ }
 
     public void changeName(){
-        app.getStage().setTitle("Hallo");
+        stageManager.getGameStage().setTitle("Hallo");
     }
 
-    public void buttonHandler(Point p ) throws IOException, InterruptedException {
+    void buttonHandler(Point p) throws IOException, InterruptedException {
         SocketMsg socketMsg = new SocketMsg(MsgType.MOVE);
         socketMsg.p = p;
-        socketMsg.playernr = app.getPlayernr();
+        socketMsg.playernr = stageManager.getPlayernr();
         communicator.sendMsg(gson.toJson(socketMsg,SocketMsg.class),communicator.session);
     }
 
     public void circleFiller(Point p, Color c){
-        getCircle(p.x,p.y).setFill(c);
+        Objects.requireNonNull(getCircle(p.x, p.y)).setFill(c);
     }
 
-    public void switchButtons(boolean Switch){
-        for(Button button: app.getButtons()){
+    public void switchButtons(boolean Switch) {
+        for (Button button : stageManager.getGamebuttons()) {
             button.setDisable(Switch);
         }
     }
+
+
+
+
     
-    public Circle getCircle(int x, int y){
-        for(Node node : app.getGridPane().getChildren()){
+    private Circle getCircle(int x, int y){
+        for(Node node : stageManager.getGamegrid().getChildren()){
             if(node instanceof Pane){
                 if(GridPane.getColumnIndex(node) == x && GridPane.getRowIndex(node)==y+1){
                     for(Node node1 : ((Pane) node).getChildren()){
@@ -73,18 +77,23 @@ public class GameController {
     public void showWin(int playernr){
         Stage dialogStage = new Stage();
         dialogStage.initModality(Modality.WINDOW_MODAL);
-        dialogStage.setTitle("Player "+ app.getPlayernr());
+        dialogStage.setTitle("Player "+ stageManager.getPlayernr());
         dialogStage.setWidth(200);
         dialogStage.setHeight(200);
 
         Button button = new Button("Ok");
-        button.setOnAction(actionEvent -> {
-            dialogStage.close();
-        });
+        button.setOnAction(actionEvent -> dialogStage.close());
         VBox vbox = new VBox(new Text("Player "+ playernr + " wins!"), button);
         vbox.setAlignment(Pos.CENTER);
 
         dialogStage.setScene(new Scene(vbox));
         dialogStage.show();
     }
+
+    public void setPlayernr(int playernr) {
+        stageManager.setPlayernr(playernr);
+        System.out.println("hi");
+        Platform.runLater(() -> stageManager.getGameStage().setTitle("Player "+playernr));
+    }
+
 }

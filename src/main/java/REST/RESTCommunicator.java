@@ -41,30 +41,8 @@ public class RESTCommunicator implements  IRESTCommunnicator{
     }
 
 
-//
-//    RESTMsg postLogin(RESTMsg restMsg){
-//
-//        final String query = url + "register";
-//
-//        HttpPost httPostQuery = new HttpPost(query);
-//        httPostQuery.addHeader("content-type","application/json");
-//
-//        StringEntity params;
-//        System.out.println("postregister");
-//
-//        try {
-//            params = new StringEntity(gson.toJson(info));
-//            httPostQuery.setEntity(params);
-//        } catch(Exception e){
-//            System.out.println("fout");
-//
-//        }
-//        return executeQuery(httPostQuery);
-//    }
 
-
-
-    RESTMsg executeQuery(HttpRequestBase requestBaseQuery){
+    private RESTMsg executeQuery(HttpRequestBase requestBaseQuery){
         //Greeting greeting = null;
         RESTMsg info = null;
         try (CloseableHttpClient httpClient = HttpClients.createDefault();
@@ -76,7 +54,6 @@ public class RESTCommunicator implements  IRESTCommunnicator{
 
             System.out.println("json "+ entityString);
 
-            //greeting = gson.fromJson(entityString, Greeting.class);
             info = gson.fromJson(entityString, RESTMsg.class);
 
         } catch (Exception e) {

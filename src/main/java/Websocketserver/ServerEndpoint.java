@@ -10,14 +10,14 @@ public class ServerEndpoint {
     private Logger logger = Logger.getLogger(this.getClass().getName());
 
     @OnOpen
-    public String onOpen(Session session) throws IOException {
+    public String onOpen(Session session){
         logger.info("Connected...." + session.getId());
         ServerLogic.getInstance().newConnection(session);
         return "open";
     }
 
     @OnMessage
-    public void onMessage(String message, Session session) throws IOException, RuntimeException {
+    public void onMessage(String message, Session session) throws IOException, RuntimeException, InterruptedException {
         logger.info("Received...."+ message);
         ServerLogic.getInstance().handleMsg(message, session);
     }

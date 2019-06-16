@@ -17,8 +17,8 @@ import java.util.ArrayList;
 
 class GameTest {
 
-    public Game game;
-    public Player player1,player2;
+    private Game game;
+    private Player player1,player2;
 
     @BeforeEach
     void setUp(){
@@ -44,7 +44,7 @@ class GameTest {
     }
 
     @Test
-    void PlacedCoins4ShouldGiveTrue(){
+    void notNull_NoNullsPresent_ShouldBeTrue_True(){
         //Arrange
         boolean expected = true;
         Field field = game.getField();
@@ -64,16 +64,6 @@ class GameTest {
         Assert.assertEquals(expected,actual);
     }
 
-    @Test
-    void player(){
-        boolean expected = false;
-        boolean actual;
-        if(player1 == player2){actual = true;
-            System.out.println("nee");}else{
-            actual = false;
-        }
-
-    }
 
 
     @Test
@@ -240,9 +230,7 @@ class GameTest {
 
         //Act
         boolean actual;
-        if(game.decideColor(player1) == Color.RED){
-            actual = true;
-        }else{ actual = false;}
+        actual = game.decideColor(player1) == Color.RED;
 
         //Assert
         Assert.assertEquals(expected,actual);
@@ -255,9 +243,7 @@ class GameTest {
 
         //Act
         boolean actual;
-        if(game.decideColor(player2) == Color.YELLOW){
-            actual = true;
-        }else{ actual = false;}
+        actual = game.decideColor(player2) == Color.YELLOW;
 
         //Assert
         Assert.assertEquals(expected,actual);
