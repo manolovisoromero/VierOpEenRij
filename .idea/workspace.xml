@@ -4,8 +4,11 @@
     <list default="true" id="aaa27d24-79ef-48a8-b132-3f675af4d95f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/websocketServer/ServerLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocketServer/ServerLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Socketcomm/MsgHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Socketcomm/MsgHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Websocketserver/ServerLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Websocketserver/ServerLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GameTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,11 +42,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+            <state relative-caret-position="209">
+              <caret line="127" column="74" selection-start-line="127" selection-start-column="74" selection-end-line="127" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/Field.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,35 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="174" column="19" selection-start-line="174" selection-start-column="19" selection-end-line="174" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/socketComm/MsgHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-end-line="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/client/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="85">
+              <caret line="109" column="18" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,8 +138,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/client/StageManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="192">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/client/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -254,8 +257,8 @@
         <option value="$PROJECT_DIR$/src/main/java/database/DatabaseAccess.java" />
         <option value="$PROJECT_DIR$/src/main/java/socketComm/MsgHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/websocketServer/ServerLogic.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GameTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/Game.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GameTest.java" />
       </list>
     </option>
   </component>
@@ -419,34 +422,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GameTest.verticalWin_4SameInRow_ShouldBeTrue_True">
     <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.Client" />
       <module name="BigIDea" />
       <option name="VM_PARAMETERS" value="--module-path C:\Users\Manol\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib --add-modules=javafx.controls,javafx.fxml --add-modules=javafx.base --module-path C:\Users\Manolo\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib --add-modules=javafx.controls,javafx.fxml --add-modules=javafx.base" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RESTserver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="rest.RESTserver" />
-      <module name="BigIDea" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="websocketServer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="websocketServer.SocketServer" />
-      <module name="BigIDea" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="websocketServer.*" />
+          <option name="PATTERN" value="client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -463,29 +446,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BigIdea" />
+    <configuration name="GameTest.notNull_NoNullsPresent_ShouldBeTrue_True" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BigIDea" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="notNull_NoNullsPresent_ShouldBeTrue_True" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.verticalWin_4NotSameInRow_ShouldBeFalse_True" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BigIDea" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameTest" />
+      <option name="METHOD_NAME" value="verticalWin_4NotSameInRow_ShouldBeFalse_True" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.verticalWin_4SameInRow_ShouldBeTrue_True" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BigIDea" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameTest" />
+      <option name="METHOD_NAME" value="verticalWin_4SameInRow_ShouldBeTrue_True" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Client" />
-      <item itemvalue="Application.SocketServer" />
-      <item itemvalue="Application.RESTserver" />
-      <item itemvalue="JUnit.GameTest" />
       <item itemvalue="JUnit.GameTest (1)" />
+      <item itemvalue="JUnit.GameTest.notNull_NoNullsPresent_ShouldBeTrue_True" />
+      <item itemvalue="JUnit.GameTest.verticalWin_4SameInRow_ShouldBeTrue_True" />
+      <item itemvalue="JUnit.GameTest.verticalWin_4NotSameInRow_ShouldBeFalse_True" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.SocketServer" />
-        <item itemvalue="Application.RESTserver" />
+        <item itemvalue="JUnit.GameTest.verticalWin_4SameInRow_ShouldBeTrue_True" />
+        <item itemvalue="JUnit.GameTest.verticalWin_4NotSameInRow_ShouldBeFalse_True" />
+        <item itemvalue="JUnit.GameTest.notNull_NoNullsPresent_ShouldBeTrue_True" />
         <item itemvalue="JUnit.GameTest (1)" />
-        <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -517,7 +521,7 @@
       <workItem from="1560377875454" duration="874000" />
       <workItem from="1560380086395" duration="617000" />
       <workItem from="1560381012383" duration="2391000" />
-      <workItem from="1560529753634" duration="44226000" />
+      <workItem from="1560529753634" duration="46371000" />
     </task>
     <task id="LOCAL-00001" summary="Moved to Game package">
       <created>1559054699312</created>
@@ -624,43 +628,50 @@
       <option name="project" value="LOCAL" />
       <updated>1560723909659</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Application itself basically ready">
+      <created>1560732751640</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1560732751641</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_HorizontalShouldWin - 2019.05.28 at 00h 58m 04s.xml">
-      <configuration name="GameTest.HorizontalShouldWin" configurationId="JUnit" />
+    <history-entry file="GameTest_vertOOB_7IsNotOutOfBoundsOnFirstIter_ShouldBeFalse_True - 2019.06.17 at 03h 12m 47s.xml">
+      <configuration name="GameTest.vertOOB_7IsNotOutOfBoundsOnFirstIter_ShouldBeFalse_True" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_HorizontalShouldWin - 2019.05.28 at 00h 58m 18s.xml">
-      <configuration name="GameTest.HorizontalShouldWin" configurationId="JUnit" />
+    <history-entry file="GameTest_vertOOB_7IsNotOutOfBoundsOnFirstIter_ShouldBeFalse_True - 2019.06.17 at 03h 12m 55s.xml">
+      <configuration name="GameTest.vertOOB_7IsNotOutOfBoundsOnFirstIter_ShouldBeFalse_True" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_FourNotSameCoinsHorizontalShouldntWin - 2019.05.28 at 00h 59m 32s.xml">
-      <configuration name="GameTest.FourNotSameCoinsHorizontalShouldntWin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2019.05.28 at 00h 59m 43s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2019.05.28 at 01h 16m 43s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2019.05.29 at 11h 59m 28s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2019.06.04 at 16h 25m 57s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2019.06.10 at 16h 42m 54s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2019.06.11 at 15h 55m 12s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_(1) - 2019.06.16 at 19h 01m 17s.xml">
+    <history-entry file="GameTest_(1) - 2019.06.17 at 03h 13m 20s.xml">
       <configuration name="GameTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_verticalWin_4SameInRow_ShouldBeTrue_True - 2019.06.17 at 03h 14m 37s.xml">
+      <configuration name="GameTest.verticalWin_4SameInRow_ShouldBeTrue_True" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_(1) - 2019.06.17 at 03h 20m 23s.xml">
+      <configuration name="GameTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_notNull_NoNullsPresent_ShouldBeTrue_True - 2019.06.17 at 03h 20m 54s.xml">
+      <configuration name="GameTest.notNull_NoNullsPresent_ShouldBeTrue_True" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_verticalWin_4SameInRow_ShouldBeTrue_True - 2019.06.17 at 03h 21m 24s.xml">
+      <configuration name="GameTest.verticalWin_4SameInRow_ShouldBeTrue_True" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_verticalWin_4SameInRow_ShouldBeTrue_True - 2019.06.17 at 03h 21m 57s.xml">
+      <configuration name="GameTest.verticalWin_4SameInRow_ShouldBeTrue_True" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_verticalWin_4SameInRow_ShouldBeTrue_True - 2019.06.17 at 03h 23m 20s.xml">
+      <configuration name="GameTest.verticalWin_4SameInRow_ShouldBeTrue_True" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_verticalWin_4NotSameInRow_ShouldBeFalse_True - 2019.06.17 at 03h 23m 36s.xml">
+      <configuration name="GameTest.verticalWin_4NotSameInRow_ShouldBeFalse_True" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151118000" />
+    <option name="totallyTimeSpent" value="153263000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -673,8 +684,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1088" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26918977" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26918977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -683,7 +695,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3858521" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3858521" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -801,16 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rest/LoginEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -873,16 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="19" selection-start-line="19" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1039,13 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/socketComm/MsgType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/socketComm/MsgHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1066,36 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest/RESTlogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/websocketServer/ServerEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/client/GameController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7">
@@ -1106,10 +1061,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client/StageManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rest/RESTlogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="194">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1126,10 +1081,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websocketServer/ServerEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/socketComm/MsgType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/StageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="174" column="19" selection-start-line="174" selection-start-column="19" selection-end-line="174" selection-end-column="19" />
+        <state relative-caret-position="85">
+          <caret line="109" column="18" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="127" column="74" selection-start-line="127" selection-start-column="74" selection-end-line="127" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

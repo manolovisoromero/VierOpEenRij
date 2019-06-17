@@ -106,7 +106,7 @@ public class Game implements ISubject{
             }
         }
 
-    private void verticalWin(Coin c) throws IOException {
+    public void verticalWin(Coin c) throws IOException {
         int j = -2;
         Point p = new Point(c.getLocation());
         for(int i =0;i<4;i++){
