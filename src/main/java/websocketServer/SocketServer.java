@@ -17,7 +17,7 @@ public class SocketServer {
             server.start();
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("Please press a key to stop the server");
-            reader.readLine();
+            String answer = reader.readLine();
         } catch (Exception e) {
             throw new RuntimeException(e);
         } finally {

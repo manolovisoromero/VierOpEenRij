@@ -106,7 +106,9 @@ public class ServerLogic implements IObserver{
                 socketMsg.msgType = MsgType.LOGINSUCCES;
                 socketMsg.playernr = decidePlayernr();
                 sendMsg(socketMsg,session);
-                addPlayer(socketMsg.user,getConnection(session),decidePlayernr());
+                if(getConnection(session)!= null) {
+                    addPlayer(socketMsg.user, getConnection(session), decidePlayernr());
+                }
                 break;
             }else{
                     socketMsg.msgType = MsgType.LOGINFAIL;

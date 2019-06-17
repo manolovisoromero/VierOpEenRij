@@ -34,10 +34,12 @@ public class DatabaseAccess implements IDatabaseAccess{
         try (Connection con = DriverManager.getConnection(
                 url, dbusername, dbpw)) {
 
-            Statement stmt = con.createStatement();
-            testquery = "select * from logindata";
+            ResultSet rs;
+            try (Statement stmt = con.createStatement()) {
+                testquery = "select * from logindata";
 
-            ResultSet rs = stmt.executeQuery(testquery);
+                rs = stmt.executeQuery(testquery);
+            }
             while (rs.next()) {
                 factory.createDBuser(rs.getString(1), rs.getString(2));
             }
@@ -60,10 +62,11 @@ public class DatabaseAccess implements IDatabaseAccess{
         try (Connection con = DriverManager.getConnection(
                 url, dbusername, dbpw)) {
 
-            Statement stmt = con.createStatement();
+            try (Statement stmt = con.createStatement()) {
 
-            String testquery = "INSERT INTO `logindata`(`Username`, `Password`) VALUES ('" + username + "','" + password + "')";
-            stmt.executeUpdate(testquery);
+                String testquery = "INSERT INTO `logindata`(`Username`, `Password`) VALUES ('" + username + "','" + password + "')";
+                stmt.executeUpdate(testquery);
+            }
 
         } catch (SQLException e) {
             logger.info("Error:" + e);
