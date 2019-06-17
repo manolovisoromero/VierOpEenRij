@@ -1,6 +1,7 @@
 package database;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public interface IDatabaseAccess {
@@ -13,7 +14,7 @@ public interface IDatabaseAccess {
     /**Executes an SELECT query
      * returns list of users
      */
-     ArrayList<logindataDB> getListOfUsers();
+     ArrayList<logindataDB> getListOfUsers() throws SQLException;
 
     /**Executes an SELECT query
      * returns list of game users

@@ -1,24 +1,24 @@
 package database;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public class DatabaseAccess implements IDatabaseAccess{
 
     private String url = "jdbc:mysql://localhost:3306/vieropeenrij";
     private String dbusername = "Manolo";
-    private String dbpassword = "12345";
+    private String dbpw = "12345";
     private dbObjectFactory factory = dbObjectFactory.getInstance();
+    private Logger logger = Logger.getLogger(this.getClass().getName());
 
     public Connection connect() {
         try{
 
             return DriverManager.getConnection(
-                    url,dbusername,dbpassword);
-        }catch(Exception e){ System.out.println(e);}
+                    url,dbusername,dbpw);
+        }catch(Exception e){             logger.info("Error:"+e);
+        }
 
         return null;
     }
@@ -29,23 +29,23 @@ public class DatabaseAccess implements IDatabaseAccess{
 
     }
 
-    public ArrayList<logindataDB> getListOfUsers(){
+    public ArrayList<logindataDB> getListOfUsers() throws SQLException {
         String testquery;
-        try{
-            Connection con=DriverManager.getConnection(
-                    url,dbusername,dbpassword);
+        try (Connection con = DriverManager.getConnection(
+                url, dbusername, dbpw)) {
 
-            Statement stmt=con.createStatement();
+            Statement stmt = con.createStatement();
             testquery = "select * from logindata";
 
-            ResultSet rs=stmt.executeQuery(testquery);
-            while(rs.next()) {
+            ResultSet rs = stmt.executeQuery(testquery);
+            while (rs.next()) {
                 factory.createDBuser(rs.getString(1), rs.getString(2));
             }
 
 
-
-        }catch(Exception e){ System.out.println(e);}
+        } catch (Exception e) {
+            logger.info("Error:" + e);
+        }
         return factory.getLogindatasDB();
     }
 
@@ -55,19 +55,20 @@ public class DatabaseAccess implements IDatabaseAccess{
     }
 
 
-    public void registerUser(String username, String password) {
-        try{
-            Connection con=DriverManager.getConnection(
-                    url,dbusername,dbpassword);
+    public void registerUser(String username, String password) throws SQLException {
 
-            Statement stmt=con.createStatement();
+        try (Connection con = DriverManager.getConnection(
+                url, dbusername, dbpw)) {
 
-            String testquery = "INSERT INTO `logindata`(`Username`, `Password`) VALUES ('"+username+"','"+password+"')";
+            Statement stmt = con.createStatement();
+
+            String testquery = "INSERT INTO `logindata`(`Username`, `Password`) VALUES ('" + username + "','" + password + "')";
             stmt.executeUpdate(testquery);
 
-            con.close();
 
-        }catch(Exception e){ System.out.println(e);}
+        } catch (Exception e) {
+            logger.info("Error:" + e);
+        }
 
 
     }
