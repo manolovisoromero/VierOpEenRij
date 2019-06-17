@@ -33,16 +33,15 @@ public class DatabaseAccess implements IDatabaseAccess{
         String testquery;
         try (Connection con = DriverManager.getConnection(
                 url, dbusername, dbpw)) {
+            testquery = "select * from logindata";
+            try (ResultSet rs = con.createStatement().executeQuery(testquery)) {
 
-            ResultSet rs;
-            try (Statement stmt = con.createStatement()) {
-                testquery = "select * from logindata";
+                while (rs.next()) {
+                    factory.createDBuser(rs.getString(1), rs.getString(2));
+                }
 
-                rs = stmt.executeQuery(testquery);
             }
-            while (rs.next()) {
-                factory.createDBuser(rs.getString(1), rs.getString(2));
-            }
+
 
 
         } catch (SQLException e) {
