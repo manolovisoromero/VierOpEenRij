@@ -47,13 +47,16 @@ public class Game implements ISubject{
         return players.get(random.nextInt(2));
     }
 
-    public void playCoin(Player player, int x) throws IOException {
+    public boolean playCoin(Player player, int x) throws IOException {
         if(Available(x)) {
             Coin c = new Coin(player, decideColor(player),whereToDrop(x));
             getField().addCoin(c);
             lastPlayed = c;
             horizontalWin(c);
+            verticalWin(c);
+            return true;
         }
+        return false;
     }
 
     public Color decideColor(Player player){
@@ -93,7 +96,7 @@ public class Game implements ISubject{
         Point p = new Point(c.getLocation());
         for(int i =0;i<4;i++){
             if(!horiOutOfBounds(p.x,i )){
-                if(notNull(c,j,i)){
+                if(notNull(c,j,i,true)){
                 if(field.getField()[p.x+j+i][p.y].player == field.getField()[p.x+j+i+1][p.y].player
                         && field.getField()[p.x+j+i+1][p.y].player == field.getField()[p.x+j+i+2][p.y].player
                         && field.getField()[p.x+j+i+2][p.y].player == field.getField()[p.x+j+i+3][p.y].player) {
@@ -102,6 +105,21 @@ public class Game implements ISubject{
                 }}
             }
         }
+
+    private void verticalWin(Coin c) throws IOException {
+        int j = -2;
+        Point p = new Point(c.getLocation());
+        for(int i =0;i<4;i++){
+            if(!vertOutOfBounds(p.y,i )){
+                if(notNull(c,j,i,false)){
+                    if((field.getField()[p.x][p.y + j + i].player == field.getField()[p.x][p.y + j +  i + 1].player)
+                            && (field.getField()[p.x][p.y + j + i + 1].player == field.getField()[p.x][p.y + j + i +2].player)
+                            && (field.getField()[p.x][p.y + j + i + 2].player == field.getField()[p.x][p.y + j + i + 3].player)) {
+                       win();
+                    }
+                }}
+        }
+    }
 
 
 
@@ -118,26 +136,29 @@ public class Game implements ISubject{
         }else{return true;}
     }
 
-    public boolean notNull(Coin c,int j, int i){
+    public boolean notNull(Coin c,int j, int i,boolean hori){
         Point p = new Point(c.getLocation());
 
+        if(hori){
+            return field.getField()[p.x + j + i][p.y] != null &&
+                    field.getField()[p.x + j + i + 1][p.y] != null
+                    && field.getField()[p.x + j + i + 2][p.y] != null
+                    && field.getField()[p.x + j + i + 3][p.y] != null;
+        }else{
 
-        if(field.getField()[p.x+j+i][p.y] !=null &&
-                 field.getField()[p.x+j+i+1][p.y]!=null
-                && field.getField()[p.x+j+i+2][p.y]!=null
-                && field.getField()[p.x+j+i+3][p.y]!=null){
-            return true;
+            return field.getField()[p.x][p.y + j + i] != null &&
+                    field.getField()[p.x][p.y + j + i + 1] != null
+                    && field.getField()[p.x][p.y + j + i + 2] != null
+                    && field.getField()[p.x][p.y + j + i + 3] != null;
         }
-
-
-        return false;
     }
 
     public boolean vertOutOfBounds(int y, int i){
-        if(y+i <= 7 && y+i-3 >=0){
+        if(y+i <= 5 && y+i-3 >=0){
             return false;
         }else{return true;}
     }
+
 
 
 
@@ -170,8 +191,8 @@ public class Game implements ISubject{
     @Override
     public void Notify() throws IOException {
 
-        for(int i = 0; i< observers.size(); i++){
-            observers.get(i).update(this);
+        for (IObserver observer : observers) {
+            observer.update(this);
         }
 
     }

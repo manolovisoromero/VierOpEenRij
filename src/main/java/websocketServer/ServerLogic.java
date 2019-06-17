@@ -123,10 +123,11 @@ public class ServerLogic implements IObserver{
                     sendMsg(socketMsg,session);
                     break;}
             case MOVE:
-                game.playCoin(getPlayer(socketMsg.playernr),socketMsg.p.x);
+                if(game.playCoin(getPlayer(socketMsg.playernr),socketMsg.p.x)){
                 socketMsg.p.y = game.getLastPlayed().getLocation().y - 1;
                 socketMsg.c = game.decideColor(getPlayer(socketMsg.playernr));
                 sendAll(socketMsg);
+                }
                 break;
         }
     }

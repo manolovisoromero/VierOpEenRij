@@ -57,7 +57,7 @@ class GameTest {
         field.addCoin(c4);
 
         //Act
-        boolean actual = game.notNull(c1,-3,3);
+        boolean actual = game.notNull(c1,-3,3,false);
 
         //Assert
         Assert.assertEquals(expected,actual);
@@ -288,6 +288,8 @@ class GameTest {
         //Assert
         Assert.assertEquals(expected,actual);
     }
+
+
 
     @Test
     void ShouldBeAvailable() {
