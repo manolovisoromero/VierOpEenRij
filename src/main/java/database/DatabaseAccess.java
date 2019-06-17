@@ -12,7 +12,7 @@ public class DatabaseAccess implements IDatabaseAccess{
     private dbObjectFactory factory = dbObjectFactory.getInstance();
     private Logger logger = Logger.getLogger(this.getClass().getName());
 
-    public Connection connect() {
+    public Connection connect()  {
         try{
 
             return DriverManager.getConnection(
@@ -29,7 +29,7 @@ public class DatabaseAccess implements IDatabaseAccess{
 
     }
 
-    public ArrayList<logindataDB> getListOfUsers() throws SQLException {
+    public ArrayList<logindataDB> getListOfUsers() {
         String testquery;
         try (Connection con = DriverManager.getConnection(
                 url, dbusername, dbpw)) {
@@ -43,7 +43,7 @@ public class DatabaseAccess implements IDatabaseAccess{
             }
 
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
             logger.info("Error:" + e);
         }
         return factory.getLogindatasDB();
@@ -55,7 +55,7 @@ public class DatabaseAccess implements IDatabaseAccess{
     }
 
 
-    public void registerUser(String username, String password) throws SQLException {
+    public void registerUser(String username, String password){
 
         try (Connection con = DriverManager.getConnection(
                 url, dbusername, dbpw)) {
@@ -65,8 +65,7 @@ public class DatabaseAccess implements IDatabaseAccess{
             String testquery = "INSERT INTO `logindata`(`Username`, `Password`) VALUES ('" + username + "','" + password + "')";
             stmt.executeUpdate(testquery);
 
-
-        } catch (Exception e) {
+        } catch (SQLException e) {
             logger.info("Error:" + e);
         }
 

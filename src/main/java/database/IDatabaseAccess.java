@@ -24,7 +24,7 @@ public interface IDatabaseAccess {
     /**Establishes DB connection
      * returns connection
      */
-     Connection connect();
+     Connection connect() throws SQLException;
 
 
 
