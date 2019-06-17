@@ -135,7 +135,7 @@ class GameTest {
         boolean actual = false;
         game.lastPlayed = c1;
         game.lastPlayed.player.setPlayernr(1);
-        game.verticalWin(c4);
+        game.verticalWin(c1);
         if(game.win){
             actual = true;
         }
